@@ -1,14 +1,14 @@
 #pragma code_page(65001) // UTF-8
 
-IDI_ICON1 ICON "img\\app\\flameshot.ico"
+IDI_ICON1 ICON "img\\app\\tildeshot.ico"
 
 #include <windows.h>
 
-#define VER_FILEVERSION             FLAMESHOT_VERSION_MAJOR,FLAMESHOT_VERSION_MINOR,FLAMESHOT_VERSION_BUGFIX,FLAMESHOT_VERSION_BUILD
-#define VER_FILEVERSION_STR         FLAMESHOT_VERSION_STRING
+#define VER_FILEVERSION             TILDESHOT_VERSION_MAJOR,TILDESHOT_VERSION_MINOR,TILDESHOT_VERSION_BUGFIX,TILDESHOT_VERSION_BUILD
+#define VER_FILEVERSION_STR         TILDESHOT_VERSION_STRING
 
-#define VER_PRODUCTVERSION          FLAMESHOT_VERSION_MAJOR,FLAMESHOT_VERSION_MINOR,FLAMESHOT_VERSION_BUGFIX,FLAMESHOT_VERSION_BUILD
-#define VER_PRODUCTVERSION_STR      FLAMESHOT_VERSION_STRING
+#define VER_PRODUCTVERSION          TILDESHOT_VERSION_MAJOR,TILDESHOT_VERSION_MINOR,TILDESHOT_VERSION_BUGFIX,TILDESHOT_VERSION_BUILD
+#define VER_PRODUCTVERSION_STR      TILDESHOT_VERSION_STRING
 
 #ifndef DEBUG
 #define VER_DEBUG                   0
@@ -29,13 +29,13 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName",      "The flameshot Org."
-            VALUE "FileDescription",  "Flameshot"
+            VALUE "CompanyName",      "The tildeshot Org."
+            VALUE "FileDescription",  "Tildeshot"
             VALUE "FileVersion",      VER_FILEVERSION_STR
-            VALUE "InternalName",     "flameshot"
+            VALUE "InternalName",     "tildeshot"
             VALUE "LegalCopyright",   "Copyright (C) 2017-2020 flameshot.org"
-            VALUE "OriginalFilename", "flameshot.exe"
-            VALUE "ProductName",      "Flameshot"
+            VALUE "OriginalFilename", "tildeshot.exe"
+            VALUE "ProductName",      "Tildeshot"
             VALUE "ProductVersion",   VER_PRODUCTVERSION_STR
         END
     END

@@ -1,8 +1,8 @@
 #include "trayicon.h"
 #include "core/capturerequest.h"
-#include "core/flameshot.h"
-#include "core/flameshotdaemon.h"
 #include "core/qguiappcurrentscreen.h"
+#include "core/tildeshot.h"
+#include "core/tildeshotdaemon.h"
 #include "utils/confighandler.h"
 #include "utils/globalvalues.h"
 
@@ -25,7 +25,7 @@ TrayIcon::TrayIcon(QObject* parent)
     initMenu();
     initScreenMenu();
 
-    setToolTip(QStringLiteral("Flameshot"));
+    setToolTip(QStringLiteral("Tildeshot"));
 #if defined(Q_OS_MACOS)
     // Because of the following issues on MacOS "Catalina":
     // https://bugreports.qt.io/browse/QTBUG-86393
@@ -38,7 +38,7 @@ TrayIcon::TrayIcon(QObject* parent)
     setContextMenu(m_menu);
 #endif
     QIcon icon =
-      QIcon::fromTheme("flameshot-tray", QIcon(GlobalValues::trayIconPath()));
+      QIcon::fromTheme("tildeshot-tray", QIcon(GlobalValues::trayIconPath()));
 
 #if defined(Q_OS_MACOS)
     if (currentMacOsVersion >= QOperatingSystemVersion::MacOSBigSur) {
@@ -79,7 +79,7 @@ TrayIcon::TrayIcon(QObject* parent)
 
     if (ConfigHandler().showStartupLaunchMessage()) {
         showMessage(
-          "Flameshot",
+          "Tildeshot",
           QObject::tr(
             "Hello, I'm here! Click icon in the tray to take a screenshot or "
             "click with a right button to see more options."),
@@ -133,28 +133,28 @@ void TrayIcon::initMenu()
     m_launcherAction = new QAction(tr("&Open Launcher"), this);
     connect(m_launcherAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::launcher);
+            Tildeshot::instance(),
+            &Tildeshot::launcher);
     auto* configAction = new QAction(tr("&Configuration"), this);
     connect(configAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::config);
+            Tildeshot::instance(),
+            &Tildeshot::config);
     m_infoAction = new QAction(tr("&About"), this);
     connect(m_infoAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::info);
+            Tildeshot::instance(),
+            &Tildeshot::info);
 
 #if !defined(DISABLE_UPDATE_CHECKER)
     m_appUpdates = new QAction(tr("Check for updates"), this);
     connect(m_appUpdates,
             &QAction::triggered,
-            FlameshotDaemon::instance(),
-            &FlameshotDaemon::checkForUpdates);
+            TildeshotDaemon::instance(),
+            &TildeshotDaemon::checkForUpdates);
 
-    connect(FlameshotDaemon::instance(),
-            &FlameshotDaemon::newVersionAvailable,
+    connect(TildeshotDaemon::instance(),
+            &TildeshotDaemon::newVersionAvailable,
             this,
             [this](const QVersionNumber& version) {
                 if (ConfigHandler().checkForUpdates()) {
@@ -181,14 +181,14 @@ void TrayIcon::initMenu()
     QAction* recentAction = new QAction(tr("&Latest Uploads"), this);
     connect(recentAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::history);
+            Tildeshot::instance(),
+            &Tildeshot::history);
 #endif
     auto* openSavePathAction = new QAction(tr("&Open Save Path"), this);
     connect(openSavePathAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::openSavePath);
+            Tildeshot::instance(),
+            &Tildeshot::openSavePath);
 
     m_menu->addAction(m_captureAction);
     m_menu->addAction(m_launcherAction);
@@ -281,9 +281,9 @@ void TrayIcon::initScreenMenu()
 
 void TrayIcon::startGuiCapture()
 {
-    auto* widget = Flameshot::instance()->gui();
+    auto* widget = Tildeshot::instance()->gui();
 #if !defined(DISABLE_UPDATE_CHECKER)
-    FlameshotDaemon::instance()->showUpdateNotificationIfAvailable(widget);
+    TildeshotDaemon::instance()->showUpdateNotificationIfAvailable(widget);
 #endif
 }
 
@@ -291,5 +291,5 @@ void TrayIcon::startGuiCaptureOnScreen(int screenIndex)
 {
     CaptureRequest req(CaptureRequest::GRAPHICAL_MODE, 400);
     req.setSelectedMonitor(screenIndex);
-    Flameshot::instance()->requestCapture(req);
+    Tildeshot::instance()->requestCapture(req);
 }

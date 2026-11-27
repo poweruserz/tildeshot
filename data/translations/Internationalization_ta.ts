@@ -146,50 +146,50 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> வினாடிகள்</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>புதிய ச்கிரீன்சாட்டை எடுக்கவும்</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>பகுதி:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>பிடிப்பு துவக்கி</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>பிடிப்பு முறை</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>தாமதம்:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>கண்காணிப்பு:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -258,12 +258,12 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
         <translation>ஃப்ளேம்சாட் கவனம் இழந்துவிட்டது. நீங்கள் எங்காவது சொடுக்கு செய்யும் வரை விசைப்பலகை குறுக்குவழிகள் வேலை செய்யாது.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
         <translation>உள்ளமைவு பிழை தீர்க்கப்பட்டது. அதைப் பயன்படுத்த, `ஃப்ளேம்சாட் குய்`யை மீண்டும் இயக்கவும்.</translation>
     </message>
     <message>
@@ -568,7 +568,7 @@ Premeu Espai per obrir el calaix lateral.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>சில விசைப்பலகை குறுக்குவழிகளில் முரண்பாடுகள் உள்ளன. 
 இது ஃப்ளேம்சாட் தொடங்குவதைத் தடுக்காது. 
@@ -777,42 +777,42 @@ Please solve them manually in the configuration file.</source>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation type="unfinished">Error</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation type="unfinished">No s&apos;han pogut tancar els widgets modals actius</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation type="unfinished">L&apos;URL s&apos;ha copiat al porta-retalls.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="obsolete">La nova versió %1 ja és disponible</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation type="unfinished">Teniu la versió més recent</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation type="unfinished">Error a l&apos;intentar obtenir informació sobre actualitzacions.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation type="unfinished">No s&apos;ha pogut connectar mitjançant DBus</translation>
     </message>
@@ -985,16 +985,16 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
         <translation>ஒரே நேரத்தில் பல ஃப்ளேம்சாட் GUI நிகழ்வுகளை அனுமதிக்கவும்</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">This allows you to take screenshots of flameshot itself for example.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">This allows you to take screenshots of tildeshot itself for example.</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Inicia el Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Inicia el Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1076,7 +1076,7 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
         <translation>எடுத்துக்காட்டாக, ஃப்ளேம்சாட்டின் திரை சாட்களை எடுக்க இது உங்களை அனுமதிக்கிறது</translation>
     </message>
     <message>
@@ -1111,7 +1111,7 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
         <translation>கணினி துவக்கப்படும் போது ஃப்ளேம்சாட் டீமனை (பின்னணி செயல்முறை) துவக்கவும்</translation>
     </message>
     <message>
@@ -1572,49 +1572,49 @@ Please solve them manually in the configuration file.</source>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>பற்றி</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Icon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>உரிமம்</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>OS செய்தி</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>நகலெடு செய்தி</translation>
     </message>
@@ -2107,12 +2107,12 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
         <translation>எழுத முடியவில்லை</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>கோரப்பட்ட திரையானது திரை எண்ணிக்கையை மீறுகிறது</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>முழுத் திரை திரைக்காட்சி திரையில் பொருத்தப்பட்டது</translation>
     </message>
@@ -2147,7 +2147,7 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
         <translation>ஒரு இயல்புநிலையானது பின்னணியில் ஃபிளேம்சாட்டை இயக்குகிறது மற்றும் உள்ளமைவுக்கான தட்டு ஐகானைச் சேர்க்கிறது.</translation>
     </message>
     <message>
@@ -2454,7 +2454,7 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
         <translation>மாற்றங்கள் நடைமுறைக்கு வர, ஃப்ளேம்சாட்டை மறுதொடக்கம் செய்ய வேண்டும்.</translation>
     </message>
 </context>
@@ -2588,12 +2588,12 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
         <translation>&apos;பிரிண்ட் திரை&apos; விசையை அழுத்தும் போது சாளரங்கள் அதன் திரைக்காட்சி கருவியைத் திறக்கும் என்று தோன்றுகிறது. ஃப்ளேம்சாட் &apos;பிரிண்ட் திரை&apos; விசையைப் பயன்படுத்தும் வகையில் இதை முடக்க விரும்புகிறீர்களா?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
         <translation>மாற்றங்கள் நடைமுறைக்கு வர, ஃப்ளேம்சாட்டை மறுதொடக்கம் செய்ய வேண்டும்.</translation>
     </message>
     <message>
@@ -2610,18 +2610,18 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
         <translation>ஃப்ளேம்சாட்டை MS-SCREENCLIP பயன்பாடாகப் பதிவுசெய்க (நிர்வாகச் சலுகைகள் தேவை)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
         <translation>பதிவுசெய்த பிறகு, சாளரங்கள் அமைப்புகளில் இயல்புநிலை திரைக்காட்சி பயன்பாடாக ஃப்ளேம்சாட்டைத் தேர்ந்தெடுக்கலாம்.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
         <translation>நீங்கள் ஃப்ளேம்சாட்டை ஒருமுறை நிர்வாகியாகத் தொடங்கி, மீண்டும் முயற்சிக்கவும்!</translation>
     </message>
 </context>
@@ -2702,7 +2702,7 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
+        <source>Tildeshot Info</source>
         <translation>ஃப்ளேம்சாட் செய்தி</translation>
     </message>
 </context>
@@ -2874,7 +2874,7 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
+        <source>New Tildeshot version %1 is available</source>
         <translation>புதிய Flamshot பதிப்பு% 1 கிடைக்கிறது</translation>
     </message>
     <message>
@@ -2991,8 +2991,8 @@ You சி-வைகாசி need பெறுநர் escape the &apos;#&apos
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Flameshot must be restarted பெறுநர் இடு these changes!</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Tildeshot must be restarted பெறுநர் இடு these changes!</translation>
     </message>
 </context>
 <context>

@@ -12,8 +12,8 @@
 #include "capturewidget.h"
 #include "config/cacheutils.h"
 #include "config/generalconf.h"
-#include "core/flameshot.h"
 #include "core/qguiappcurrentscreen.h"
+#include "core/tildeshot.h"
 #include "tools/copy/copytool.h"
 #include "utils/abstractlogger.h"
 #include "utils/screengrabber.h"
@@ -132,7 +132,7 @@ CaptureWidget::CaptureWidget(const CaptureRequest& req,
         selectedScreen = grabber.getSelectedScreen();
 
 #if defined(Q_OS_WIN)
-#if !defined(FLAMESHOT_DEBUG_CAPTURE)
+#if !defined(TILDESHOT_DEBUG_CAPTURE)
         setWindowFlags(Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint |
                        Qt::SubWindow // Hides the taskbar icon
         );
@@ -175,8 +175,8 @@ CaptureWidget::CaptureWidget(const CaptureRequest& req,
         resize(currentScreen->size());
 // LINUX
 #else
-// Call cmake with -DFLAMESHOT_DEBUG_CAPTURE=ON to enable easier debugging
-#if !defined(FLAMESHOT_DEBUG_CAPTURE)
+// Call cmake with -DTILDESHOT_DEBUG_CAPTURE=ON to enable easier debugging
+#if !defined(TILDESHOT_DEBUG_CAPTURE)
         if (DesktopInfo().waylandDetected()) {
             setWindowFlags(Qt::BypassWindowManagerHint |
                            Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint |
@@ -324,10 +324,10 @@ CaptureWidget::~CaptureWidget()
         setLastRegion(lastRegion);
         QRect geometry(m_context.selection);
         geometry.setTopLeft(geometry.topLeft() + m_context.widgetOffset);
-        Flameshot::instance()->exportCapture(
+        Tildeshot::instance()->exportCapture(
           pixmap(), geometry, m_context.request);
     } else {
-        emit Flameshot::instance()->captureFailed();
+        emit Tildeshot::instance()->captureFailed();
     }
 }
 
@@ -780,13 +780,13 @@ void CaptureWidget::paintEvent(QPaintEvent* paintEvent)
 
     if (!isActiveWindow()) {
         drawErrorMessage(
-          tr("Flameshot has lost focus. Keyboard shortcuts won't "
+          tr("Tildeshot has lost focus. Keyboard shortcuts won't "
              "work until you click somewhere."),
           &painter);
     } else if (m_configError) {
         drawErrorMessage(ConfigHandler().errorMessage(), &painter);
     } else if (m_configErrorResolved) {
-        drawErrorMessage(tr("Configuration error resolved. Launch `flameshot "
+        drawErrorMessage(tr("Configuration error resolved. Launch `tildeshot "
                             "gui` again to apply it."),
                          &painter);
     }
@@ -1492,7 +1492,7 @@ void CaptureWidget::handleToolSignal(CaptureTool::Request r)
                 w->setAttribute(Qt::WA_DeleteOnClose);
                 w->activateWindow();
                 w->show();
-                Flameshot::instance()->setExternalWidget(true);
+                Tildeshot::instance()->setExternalWidget(true);
             }
             break;
         case CaptureTool::REQ_INCREASE_TOOL_SIZE:

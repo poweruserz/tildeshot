@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // SPDX-FileCopyrightText: 2017-2019 Alejandro Sirgo Rica & Contributors
 
-#include "flameshot.h"
-#include "core/flameshotdaemon.h"
+#include "tildeshot.h"
+#include "core/tildeshotdaemon.h"
 #if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
 #include "qhotkey.h"
 #endif
@@ -93,7 +93,7 @@ void raiseAboveMenuBar(QWidget* widget)
 #include <QScreen>
 #endif
 
-Flameshot::Flameshot()
+Tildeshot::Tildeshot()
   : m_haveExternalWidget(false)
   , m_captureWindow(nullptr)
 #if (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
@@ -131,13 +131,13 @@ Flameshot::Flameshot()
 #endif
 }
 
-Flameshot* Flameshot::instance()
+Tildeshot* Tildeshot::instance()
 {
-    static Flameshot c;
+    static Tildeshot c;
     return &c;
 }
 
-CaptureWidget* Flameshot::gui(const CaptureRequest& req)
+CaptureWidget* Tildeshot::gui(const CaptureRequest& req)
 {
     if (!resolveAnyConfigErrors()) {
         return nullptr;
@@ -153,7 +153,7 @@ CaptureWidget* Flameshot::gui(const CaptureRequest& req)
 #if defined(Q_OS_MACOS)
     // This is required on MacOS because of Mission Control. If you'll switch to
     // another Desktop you cannot take a new screenshot from the tray, you have
-    // to switch back to the Flameshot Desktop manually. It is not obvious and a
+    // to switch back to the Tildeshot Desktop manually. It is not obvious and a
     // large number of users are confused and report a bug.
     if (m_captureWindow != nullptr) {
         m_captureWindow->close();
@@ -206,7 +206,7 @@ CaptureWidget* Flameshot::gui(const CaptureRequest& req)
     }
 }
 
-void Flameshot::screen(CaptureRequest req, const int screenNumber)
+void Tildeshot::screen(CaptureRequest req, const int screenNumber)
 {
     if (!resolveAnyConfigErrors()) {
         return;
@@ -260,7 +260,7 @@ void Flameshot::screen(CaptureRequest req, const int screenNumber)
     }
 }
 
-void Flameshot::full(const CaptureRequest& req)
+void Tildeshot::full(const CaptureRequest& req)
 {
     if (!resolveAnyConfigErrors()) {
         return;
@@ -269,14 +269,14 @@ void Flameshot::full(const CaptureRequest& req)
     bool ok = true;
     QPixmap p(ScreenGrabber().grabFullDesktop(ok));
     if (ok) {
-        QRect selection; // `flameshot full` does not support region selection
+        QRect selection; // `tildeshot full` does not support region selection
         exportCapture(p, selection, req);
     } else {
         emit captureFailed();
     }
 }
 
-void Flameshot::launcher()
+void Tildeshot::launcher()
 {
     if (!resolveAnyConfigErrors()) {
         return;
@@ -291,7 +291,7 @@ void Flameshot::launcher()
 #endif
 }
 
-void Flameshot::config()
+void Tildeshot::config()
 {
     if (!resolveAnyConfigErrors()) {
         return;
@@ -312,7 +312,7 @@ void Flameshot::config()
     }
 }
 
-void Flameshot::info()
+void Tildeshot::info()
 {
     if (m_infoWindow == nullptr) {
         m_infoWindow = new InfoWindow();
@@ -323,7 +323,7 @@ void Flameshot::info()
 }
 
 #ifdef ENABLE_IMGUR
-void Flameshot::history()
+void Tildeshot::history()
 {
     static UploadHistory* historyWidget = nullptr;
     if (historyWidget == nullptr) {
@@ -349,7 +349,7 @@ void Flameshot::history()
 #endif
 
 #if defined(Q_OS_MACOS)
-void Flameshot::onWindowVisibilityChanged(QWindow::Visibility newVisibility)
+void Tildeshot::onWindowVisibilityChanged(QWindow::Visibility newVisibility)
 {
     auto* qw = qobject_cast<QWindow*>(sender());
     if (!qw) {
@@ -372,7 +372,7 @@ void Flameshot::onWindowVisibilityChanged(QWindow::Visibility newVisibility)
     }
 }
 
-void Flameshot::showDockIcon(QWidget* w)
+void Tildeshot::showDockIcon(QWidget* w)
 {
     QWindow* qw = w->windowHandle();
     if (!qw) {
@@ -382,11 +382,11 @@ void Flameshot::showDockIcon(QWidget* w)
     connect(qw,
             &QWindow::visibilityChanged,
             this,
-            &Flameshot::onWindowVisibilityChanged);
+            &Tildeshot::onWindowVisibilityChanged);
 }
 #endif
 
-void Flameshot::openSavePath()
+void Tildeshot::openSavePath()
 {
     QString savePath = ConfigHandler().savePath();
     if (!savePath.isEmpty()) {
@@ -394,18 +394,18 @@ void Flameshot::openSavePath()
     }
 }
 
-QVersionNumber Flameshot::getVersion()
+QVersionNumber Tildeshot::getVersion()
 {
     return QVersionNumber::fromString(
       QStringLiteral(APP_VERSION).replace("v", ""));
 }
 
-void Flameshot::setOrigin(Origin origin)
+void Tildeshot::setOrigin(Origin origin)
 {
     m_origin = origin;
 }
 
-Flameshot::Origin Flameshot::origin()
+Tildeshot::Origin Tildeshot::origin()
 {
     return m_origin;
 }
@@ -414,7 +414,7 @@ Flameshot::Origin Flameshot::origin()
  * @brief Prompt the user to resolve config errors if necessary.
  * @return Whether errors were resolved.
  */
-bool Flameshot::resolveAnyConfigErrors()
+bool Tildeshot::resolveAnyConfigErrors()
 {
     bool resolved = true;
     ConfigHandler confighandler;
@@ -443,7 +443,7 @@ bool Flameshot::resolveAnyConfigErrors()
     return resolved;
 }
 
-void Flameshot::requestCapture(const CaptureRequest& request)
+void Tildeshot::requestCapture(const CaptureRequest& request)
 {
     if (!resolveAnyConfigErrors()) {
         return;
@@ -472,7 +472,7 @@ void Flameshot::requestCapture(const CaptureRequest& request)
     }
 }
 
-void Flameshot::exportCapture(const QPixmap& capture,
+void Tildeshot::exportCapture(const QPixmap& capture,
                               QRect& selection,
                               const CaptureRequest& req)
 {
@@ -505,11 +505,11 @@ void Flameshot::exportCapture(const QPixmap& capture,
     }
 
     if (tasks & CR::COPY) {
-        FlameshotDaemon::copyToClipboard(capture);
+        TildeshotDaemon::copyToClipboard(capture);
     }
 
     if (tasks & CR::PIN) {
-        FlameshotDaemon::createPin(capture, selection);
+        TildeshotDaemon::createPin(capture, selection);
         if (mode == CR::SCREEN_MODE || mode == CR::FULLSCREEN_MODE) {
             AbstractLogger::info()
               << QObject::tr("Full screen screenshot pinned to screen");
@@ -534,7 +534,7 @@ void Flameshot::exportCapture(const QPixmap& capture,
           widget, &ImgUploaderBase::uploadOk, [=, this](const QUrl& url) {
               if (ConfigHandler().copyURLAfterUpload()) {
                   if (!(tasks & CR::COPY)) {
-                      FlameshotDaemon::copyToClipboard(
+                      TildeshotDaemon::copyToClipboard(
                         url.toString(), tr("URL copied to clipboard."));
                   }
                   widget->showPostUploadDialog();
@@ -548,14 +548,14 @@ void Flameshot::exportCapture(const QPixmap& capture,
     }
 }
 
-void Flameshot::setExternalWidget(bool b)
+void Tildeshot::setExternalWidget(bool b)
 {
     m_haveExternalWidget = b;
 }
-bool Flameshot::haveExternalWidget()
+bool Tildeshot::haveExternalWidget()
 {
     return m_haveExternalWidget;
 }
 
 // STATIC ATTRIBUTES
-Flameshot::Origin Flameshot::m_origin = Flameshot::DAEMON;
+Tildeshot::Origin Tildeshot::m_origin = Tildeshot::DAEMON;

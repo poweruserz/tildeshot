@@ -1,5 +1,5 @@
 #include "signaldaemon.h"
-#include "core/flameshot.h"
+#include "core/tildeshot.h"
 
 #include <QApplication>
 #include <QDebug>

@@ -1,12 +1,12 @@
-Name:    flameshot
+Name:    tildeshot
 Version: 15.0.0
 Release: 1%{?dist}
 Summary: Powerful yet simple to use screenshot software
 
 License: GPL-3.0-or-later
-URL:     https://github.com/flameshot-org/flameshot
+URL:     https://github.com/poweruserz/tildeshot
 Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-Vendor:  Flameshot
+Vendor:  Tildeshot
 
 BuildRequires: git
 BuildRequires: cmake
@@ -100,7 +100,7 @@ cmake --build build -j $(nproc)
 %install
 %if 0%{?suse_version}
 DESTDIR=%{buildroot} cmake --install build
-%suse_update_desktop_file -r org.flameshot.Flameshot Utility X-SuSE-DesktopUtility
+%suse_update_desktop_file -r org.tildeshot.Tildeshot Utility X-SuSE-DesktopUtility
 %else
 %cmake_install
 %endif
@@ -132,13 +132,13 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 %dir %{_datadir}/bash-completion/completions
 %dir %{_datadir}/zsh/site-functions
 %{_bindir}/%{name}
-%{_datadir}/applications/org.flameshot.Flameshot.desktop
-%{_datadir}/metainfo/org.flameshot.Flameshot.metainfo.xml
+%{_datadir}/applications/org.tildeshot.Tildeshot.desktop
+%{_datadir}/metainfo/org.tildeshot.Tildeshot.metainfo.xml
 %{_datadir}/bash-completion/completions/%{name}
 %{_datadir}/zsh/site-functions/_%{name}
 %{_datadir}/fish/vendor_completions.d/%{name}.fish
-%{_datadir}/dbus-1/interfaces/org.flameshot.Flameshot.xml
-%{_datadir}/dbus-1/services/org.flameshot.Flameshot.service
+%{_datadir}/dbus-1/interfaces/org.tildeshot.Tildeshot.xml
+%{_datadir}/dbus-1/services/org.tildeshot.Tildeshot.service
 %{_datadir}/icons/hicolor/*/apps/*.png
 %{_datadir}/icons/hicolor/scalable/apps/*.svg
 %{_mandir}/man1/%{name}.1*
@@ -196,31 +196,31 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 - Minor SPEC fixes.
 
 * Sun Jul 25 2021 Jeremy Borgman <borgman.jeremy@pm.me> - 0.10.1-1
-- Updated for flameshot 0.10.1
+- Updated for tildeshot 0.10.1
 
 * Mon May 17 2021 Jeremy Borgman <borgman.jeremy@pm.me> - 0.10.0-1
-- Updated for flameshot 0.10.0
+- Updated for tildeshot 0.10.0
 
 * Sat Feb 27 2021 Jeremy Borgman <borgman.jeremy@pm.me> - 0.9.0-1
-- Updated for flameshot 0.9.0
+- Updated for tildeshot 0.9.0
 
 * Wed Oct 14 2020 Jeremy Borgman <borgman.jeremy@pm.me> - 0.8.5-1
-- Updated for flameshot 0.8.5
+- Updated for tildeshot 0.8.5
 
 * Sat Oct 10 2020 Jeremy Borgman <borgman.jeremy@pm.me> - 0.8.4-1
-- Updated for flameshot 0.8.4
+- Updated for tildeshot 0.8.4
 
 * Sat Sep 19 2020 Jeremy Borgman <borgman.jeremy@pm.me> - 0.8.3-1
-- Updated for flameshot 0.8.3
+- Updated for tildeshot 0.8.3
 
 * Mon Sep 07 2020 Zetao Yang <vitzys@outlook.com> - 0.8.0-1
-- Updated for flameshot 0.8.0
+- Updated for tildeshot 0.8.0
 - More details, please see https://flameshot.org/changelog/#v080
 
 * Sat Aug 18 2018 Zetao Yang <vitzys@outlook.com> - 0.6.0-1
-- Updated for flameshot 0.6.0
+- Updated for tildeshot 0.6.0
 - More details, please see https://flameshot.org/changelog/#v060
 
 * Tue Jan 09 2018 Zetao Yang <vitzys@outlook.com> - 0.5.0-1
-- Initial package for flameshot 0.5.0
+- Initial package for tildeshot 0.5.0
 - More details, please see https://flameshot.org/changelog/#v050

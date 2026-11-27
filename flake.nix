@@ -66,8 +66,8 @@
             kdePackages.kguiaddons
           ];
 
-          flameshot = pkgs.stdenv.mkDerivation {
-            pname = "flameshot";
+          tildeshot = pkgs.stdenv.mkDerivation {
+            pname = "tildeshot";
             version = "dev";
 
             src = ./.;
@@ -94,31 +94,31 @@
             dontWrapQtApps = true;
 
             postFixup = ''
-              wrapProgram $out/bin/flameshot \
+              wrapProgram $out/bin/tildeshot \
                 ${lib.optionalString enableWlrSupport "--prefix PATH : ${lib.makeBinPath [ pkgs.grim ]}"} \
                 ''${qtWrapperArgs[@]}
             '';
 
             meta = {
               description = "Powerful yet simple to use screenshot software";
-              homepage = "https://github.com/flameshot-org/flameshot";
+              homepage = "https://github.com/poweruserz/tildeshot";
               license = pkgs.lib.licenses.gpl3Only;
-              maintainers = [ "flameshot-org" ];
+              maintainers = [ "tildeshot-org" ];
               platforms = pkgs.lib.platforms.unix ++ pkgs.lib.platforms.darwin;
-              mainProgram = "flameshot";
+              mainProgram = "tildeshot";
             };
           };
         in
         {
           packages = {
-            default = flameshot;
-            inherit flameshot;
+            default = tildeshot;
+            inherit tildeshot;
           };
 
           devShells.default = pkgs.mkShell {
-            name = "flameshot-dev";
+            name = "tildeshot-dev";
 
-            inputsFrom = [ flameshot ];
+            inputsFrom = [ tildeshot ];
 
             buildInputs = with pkgs; [
               gdb

@@ -1,8 +1,8 @@
-app-id: org.flameshot.Flameshot
+app-id: org.tildeshot.Tildeshot
 runtime: org.kde.Platform
 runtime-version: '6.10'
 sdk: org.kde.Sdk
-command: flameshot
+command: tildeshot
 finish-args:
   # X11 + XShm access
   - --share=ipc
@@ -21,7 +21,7 @@ finish-args:
   # System Tray Icon
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
-  - name: flameshot
+  - name: tildeshot
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release 
@@ -39,7 +39,7 @@ modules:
         dest: external/KDSingleApplication
         
       - type: git
-        url: https://github.com/flameshot-org/flameshot.git
+        url: https://github.com/poweruserz/tildeshot.git
         branch: master
         # tag: v14.0.0
         # commit: e408812d77ff1835957f85796c4cf737466bd69d

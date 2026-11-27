@@ -9,7 +9,7 @@ Contributions are welcome! Here's how you can help:
 
 ## Translations
 
-See [translation instructions](https://github.com/flameshot-org/translation-instruction).
+Translations are Qt Linguist files in [`data/translations/`](../data/translations).
 
 ## Code
 
@@ -34,14 +34,14 @@ For small fixes or incremental improvements simply fork the repo and follow the 
 ## Issues
 
 1. Do a quick search on GitHub to check if the issue has already been reported.
-2. [Open an issue](https://github.com/flameshot-org/flameshot/issues/new) and describe the issue you are having - you could include:
+2. [Open an issue](https://github.com/poweruserz/tildeshot/issues/new) and describe the issue you are having - you could include:
      - Screenshots
      - Ways to reproduce the issue.
-     - Your Flameshot version.
+     - Your Tildeshot version.
      - Your platform (e.g. Windows 10 or Ubuntu 15.04 x64)
 
 After reporting you should aim to answer questions or clarifications as this helps pinpoint the cause of the issue.
 
 ## Donations
 
-Please refer to [the donation page on website]() for details, but as a brief recap, Flameshot does **not** accept financial donations, but we encourage you to put code bounty on the platform of your choice on the issues you like to be addressed.
+Please refer to [the donation page on website]() for details, but as a brief recap, Tildeshot does **not** accept financial donations, but we encourage you to put code bounty on the platform of your choice on the issues you like to be addressed.

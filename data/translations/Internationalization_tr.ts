@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> saniye</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>Yeni ekran görüntüsü al</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Alan:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>Yakalama Başlatıcı</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Yakalama Modu</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Gecikme:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>Ekran:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -270,13 +270,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot odağı kaybetti. Klavye kısayolları, siz bir yere tıklayana kadar çalışmayacaktır.</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot odağı kaybetti. Klavye kısayolları, siz bir yere tıklayana kadar çalışmayacaktır.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Yapılandırma hatası çözüldü. Uygulamak için `flameshot gui` yeniden başlatın.</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>Yapılandırma hatası çözüldü. Uygulamak için `tildeshot gui` yeniden başlatın.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -588,10 +588,10 @@ Yan paneli açmak için Boşluk tuşuna basın.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Bazı klavye kısayollarında çakışmalar var.
-Bu, flameshot&apos;ın başlamasını ENGELLEMEYECEKTİR.
+Bu, tildeshot&apos;ın başlamasını ENGELLEMEYECEKTİR.
 Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
     <message>
@@ -797,42 +797,42 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>Etkin modal widget&apos;lar kapatılamıyor</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>URL panoya kopyalandı.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="vanished">Yeni %1 sürümü var</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>En son sürümü kullanıyorsunuz</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>En son sürüm hakkında bilgi alınamadı.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>DBus ile bağlanılamıyor</translation>
     </message>
@@ -904,8 +904,8 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Başlangıçta başlatın</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshot&apos;ı başlat</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Tildeshot&apos;ı başlat</translation>
     </message>
 </context>
 <context>
@@ -1009,12 +1009,12 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Aynı anda birden fazla flameshot grafiksel arayüz örneğine izin ver</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Aynı anda birden fazla tildeshot grafiksel arayüz örneğine izin ver</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">Bu, örneğin flameshot&apos;ın kendisinin ekran görüntülerini almanıza olanak tanır.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">Bu, örneğin tildeshot&apos;ın kendisinin ekran görüntülerini almanıza olanak tanır.</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1025,8 +1025,8 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Başlangıçta başlat</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshot&apos;ı başlat</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Tildeshot&apos;ı başlat</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1108,12 +1108,12 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>Bu, Flameshot&apos;ın kendi ekran görüntülerini almanıza olanak tanır</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>Bu, Tildeshot&apos;ın kendi ekran görüntülerini almanıza olanak tanır</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Bilgisayar başlatıldığında Flameshot arka plan uygulamasını başlat</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Bilgisayar başlatıldığında Tildeshot arka plan uygulamasını başlat</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1155,8 +1155,8 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>Bilgisayar başlatıldığında Flameshot arka plan hizmetini (daemon) başlat</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>Bilgisayar başlatıldığında Tildeshot arka plan hizmetini (daemon) başlat</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1616,49 +1616,49 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Simge</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>Lisans</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Sürüm</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>İşletim Sistemi</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>Bilgileri Kopyala</translation>
     </message>
@@ -2182,12 +2182,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>Yazılamadı</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>İstenen ekran, ekran sayısını aşıyor</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Ekrana sabitlenmiş tam ekran ekran görüntüsü</translation>
     </message>
@@ -2230,8 +2230,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>Öntanımlı olarak arka planda Flameshot çalıştırır ve yapılandırma için bir tepsi simgesi ekler.</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>Öntanımlı olarak arka planda Tildeshot çalıştırır ve yapılandırma için bir tepsi simgesi ekler.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="83"/>
@@ -2545,8 +2545,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Değişikliklerin etkili olması için Flameshot yeniden başlatılmalıdır.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Değişikliklerin etkili olması için Tildeshot yeniden başlatılmalıdır.</translation>
     </message>
 </context>
 <context>
@@ -2668,13 +2668,13 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Görünüşe göre, ‘Print Screen’ tuşuna basıldığında Windows kendi ekran görüntüsü aracını açmaya zorluyor. Flameshot’un ‘Print Screen’ tuşunu kullanabilmesi için bunu devre dışı bırakmak ister misiniz?</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Görünüşe göre, ‘Print Screen’ tuşuna basıldığında Windows kendi ekran görüntüsü aracını açmaya zorluyor. Tildeshot’un ‘Print Screen’ tuşunu kullanabilmesi için bunu devre dışı bırakmak ister misiniz?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Değişikliklerin etkili olması için Flameshot yeniden başlatılmalıdır.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Değişikliklerin etkili olması için Tildeshot yeniden başlatılmalıdır.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2690,19 +2690,19 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
-        <translation>Flameshot’u MS-SCREENCLIP uygulaması olarak kaydet (yönetici ayrıcalıkları gerekli)</translation>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Tildeshot’u MS-SCREENCLIP uygulaması olarak kaydet (yönetici ayrıcalıkları gerekli)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>Kaydettikten sonra, Windows Ayarlarından Flameshot&apos;ı öntanımlı ekran görüntüsü uygulaması olarak seçebilirsiniz.</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>Kaydettikten sonra, Windows Ayarlarından Tildeshot&apos;ı öntanımlı ekran görüntüsü uygulaması olarak seçebilirsiniz.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Flameshot’u bir kez yönetici olarak başlatıp tekrar deneyebilirsiniz!</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Tildeshot’u bir kez yönetici olarak başlatıp tekrar deneyebilirsiniz!</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -2892,8 +2892,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Flameshot Hakkında</translation>
+        <source>Tildeshot Info</source>
+        <translation>Tildeshot Hakkında</translation>
     </message>
 </context>
 <context>
@@ -3064,8 +3064,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Yeni Flameshot %1 sürümü mevcut</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>Yeni Tildeshot %1 sürümü mevcut</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3181,8 +3181,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Bu değişiklikleri uygulamak için Flameshot yeniden başlatılmalıdır!</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Bu değişiklikleri uygulamak için Tildeshot yeniden başlatılmalıdır!</translation>
     </message>
 </context>
 <context>

@@ -1,6 +1,6 @@
 # V11.0 Beta
 
-This is the BETA release for version 11. As you will see below there were major refactorings to the internals of Flameshot. We did our best internal testing, but this particular beta is more likely to have issues than most.
+This is the BETA release for version 11. As you will see below there were major refactorings to the internals of Tildeshot. We did our best internal testing, but this particular beta is more likely to have issues than most.
 
 We will be in beta for 1-2 weeks depending on what kind of issues are found and then do the official release. 
 
@@ -12,12 +12,12 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - DBus is no longer required for CLI options.
 
-- Flameshot can now be run in "one off" mode which means the background systray component is now optional. See the CLI details below.
+- Tildeshot can now be run in "one off" mode which means the background systray component is now optional. See the CLI details below.
 
 - The CLI has been completely refactored. With the new architecture we added the following:
-  - The man page has been rewritten to reflect all the new options. The best place to learn about these new features is the man page or flameshot --help, but some notable new features will be outlined here. 
+  - The man page has been rewritten to reflect all the new options. The best place to learn about these new features is the man page or tildeshot --help, but some notable new features will be outlined here. 
   - CLI is now callable from MacOS.
-  - CLI options are unified wherever possible. This means if an argument is added to "flameshot gui" it is also likely to be supported in "flameshot full".
+  - CLI options are unified wherever possible. This means if an argument is added to "tildeshot gui" it is also likely to be supported in "tildeshot full".
   - `--region` is a new flag that allows users to specify the exact region to screenshot. It uses the same syntax as xrandr: `WxH+x+y`.
     - This is likely to be added to the launcher in the next release. 
   - `--accept-on-select` This flag will save the image as soon as the mouse is released when selecting a region.
@@ -56,7 +56,7 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - MacOS users can now bind a custom hotkey for taking a screenshot. 
 
-- The config file parser has been reworked. It will now alert users if there is an error in their config. If a repair is possible, Flameshot attempts to repair the file. 
+- The config file parser has been reworked. It will now alert users if there is an error in their config. If a repair is possible, Tildeshot attempts to repair the file. 
   - We do our best not to break existing configs, but sometimes adding new features or removing old ones force this to change. 
 
 - Double clicking can be used to copy the screenshot to the clipboard. 
@@ -78,9 +78,9 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - Path handling has been improved.
 
-- Fixed an issue where running Flameshot for the first time on NixOS would fail to create the config file.
+- Fixed an issue where running Tildeshot for the first time on NixOS would fail to create the config file.
 
-- Fixed a problem with some window managers where Flameshot would lose focus and shortcuts would stop working.
+- Fixed a problem with some window managers where Tildeshot would lose focus and shortcuts would stop working.
 
 ## Known Issues
 - Fractional scaling on linux is still not resolved.  (But we have identified a workaround finally. Hope to merge soon.)
@@ -89,9 +89,9 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 I want to give special shout outs to some team members that made this release possible. 
 - @veracioux for doing most of the refactoring that made this release possible 
 - @mmahmoudian for tirelessly doing triage and community management
-- @Correct-Syntax for the [redesigned website](https://flameshot.org)
+- @Correct-Syntax for the [redesigned website](https://github.com/poweruserz/tildeshot)
 
-We are very excited by the many first time contributors that helped with this release. We are always looking for more people to contribute to Flameshot and are happy to provide mentorship if needed:
+We are very excited by the many first time contributors that helped with this release. We are always looking for more people to contribute to Tildeshot and are happy to provide mentorship if needed:
 
 * @johnjago made their first contribution in https://github.com/flameshot-org/flameshot/pull/1779
 * @veracioux made their first contribution in https://github.com/flameshot-org/flameshot/pull/1782

@@ -3,28 +3,28 @@ This is the beta for the version 12.0 release. We will be in beta for about a we
 
 ## New Features
 - Created basic layer movement functionality (up, down) by @affirVega in https://github.com/flameshot-org/flameshot/pull/2108
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/layer.gif" width=50%> </p>
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/layer.gif" width=50%> </p>
 
 - Added a new widget to allow the colorwheel to be more easily customized by https://github.com/flameshot-org/flameshot/pull/2202
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/colorwheel.png" width=50%> </p>
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/colorwheel.png" width=50%> </p>
 
 
 - Added magnifier for more precise selections by @SilasDo in https://github.com/flameshot-org/flameshot/pull/2219
   - The new magnifier can be enabled in ```Configuration > General > Show Magnifier``` 
   - There is an option to make the magnifier a square or circle
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/magnifer.gif" width=50%> </p>
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/magnifer.gif" width=50%> </p>
 
 - Incremental markers can now have a point if you drag when placing them. @vozdeckyl in https://github.com/flameshot-org/flameshot/pull/2638
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/number_pointer.png" width=50%> </p>
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/number_pointer.png" width=50%> </p>
 
 - Added the ability to cache the last region by @borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2615
   - The launcher tool will automatically populate the coordinates for the last selection region
-  - If ```Configuration > General > Use last region``` is selected, Flameshot will always initialize with the last successfully captured region
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/region_launcher.png" width=50%> </p>
+  - If ```Configuration > General > Use last region``` is selected, Tildeshot will always initialize with the last successfully captured region
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/region_launcher.png" width=50%> </p>
 
 - Pinned screenshots can now be copied to the clipboard or saved to a file if a user right clicks on the pinned image by @zhangfuwen in https://github.com/flameshot-org/flameshot/pull/2519
 
-- Users can now specify their own Imgur API Key from ```Configuration > General > Imgur API Key```. This is encouraged because as Flameshot has gotten more popular we have started exceeding the upload limit of the default API key by@borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2503
+- Users can now specify their own Imgur API Key from ```Configuration > General > Imgur API Key```. This is encouraged because as Tildeshot has gotten more popular we have started exceeding the upload limit of the default API key by@borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2503
 
 - Added 'Save to disk' button when uploading to imgur by @AndreaMarangoni in https://github.com/flameshot-org/flameshot/pull/2237
 
@@ -36,15 +36,15 @@ This is the beta for the version 12.0 release. We will be in beta for about a we
 
 - Allow final actions when printing geometry when invoke by CLI by @borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2444
 
-- Many Flameshot widgets have been reworked to use .ui XML files and Qt Designer. This has been done to allow non C++ developers to more easily contribute to the graphical side of Flameshot.
-<p align=center><img src="https://github.com/flameshot-org/flameshot/blob/master/docs/images/ui_file.png" width=50%> </p>
+- Many Tildeshot widgets have been reworked to use .ui XML files and Qt Designer. This has been done to allow non C++ developers to more easily contribute to the graphical side of Tildeshot.
+<p align=center><img src="https://github.com/poweruserz/tildeshot/blob/master/docs/images/ui_file.png" width=50%> </p>
 
 - Updated Translations
 
 # Bug Fixes
 - Pinned images can now be moved partially offscreen on linux by @zhangfuwen in https://github.com/flameshot-org/flameshot/pull/2520
 - Wayland builds now use KF Gui (KDE Framework tools) to fix some issues by @borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2305
-- Fix Flameshot crashes with GB locale by @AndreaMarangoni in https://github.com/flameshot-org/flameshot/pull/2304
+- Fix Tildeshot crashes with GB locale by @AndreaMarangoni in https://github.com/flameshot-org/flameshot/pull/2304
 - Add alternative shortcuts file for KDE Flatpak installs by @Proton-459 in https://github.com/flameshot-org/flameshot/pull/2357
 - fixed freeze with copy URL to clipboard by @borgmanJeremy in https://github.com/flameshot-org/flameshot/pull/2348
 - Fixed crash selecting texttool by @AndreaMarangoni in https://github.com/flameshot-org/flameshot/pull/2369

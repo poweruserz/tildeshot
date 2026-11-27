@@ -22,7 +22,7 @@
 #include <QWidget>
 #include <algorithm>
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
 #include <QDebug>
 #endif
 
@@ -172,7 +172,7 @@ ScreenGrabber::PortalStatus ScreenGrabber::freeDesktopPortal(
         return PortalStatus::Failed;
     }
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("FreeDesktop portal screenshot size: %1x%2, DPR: %3")
                   .arg(res.width())
                   .arg(res.height())
@@ -443,7 +443,7 @@ QWidget* ScreenGrabber::createMonitorPreviews(const QPixmap& fullScreenshot)
     m_monitorPreviews.clear();
     m_highlightedMonitorPreview = -1;
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("=== All Screen Information ===");
     for (int i = 0; i < screens.size(); ++i) {
         QScreen* s = screens[i];
@@ -666,7 +666,7 @@ QPixmap ScreenGrabber::cropToMonitor(const QPixmap& fullScreenshot,
     int totalLogicalWidth = maxX - minX;
     int totalLogicalHeight = maxY - minY;
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("Total logical dimensions: %1x%2 (min: %3,%4)")
                   .arg(totalLogicalWidth)
                   .arg(totalLogicalHeight)
@@ -687,7 +687,7 @@ QPixmap ScreenGrabber::cropToMonitor(const QPixmap& fullScreenshot,
     qreal screenshotScaleY =
       (qreal)fullScreenshot.height() / totalLogicalHeight;
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("Screenshot scale factors: X=%1 Y=%2")
                   .arg(screenshotScaleX)
                   .arg(screenshotScaleY);
@@ -720,7 +720,7 @@ QPixmap ScreenGrabber::cropToMonitor(const QPixmap& fullScreenshot,
     cropWidth = qRound(targetGeometry.width() * targetDpr);
     cropHeight = qRound(targetGeometry.height() * targetDpr);
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("Calculated crop position for mixed DPI: X=%1 Y=%2")
                   .arg(cropX)
                   .arg(cropY);
@@ -729,7 +729,7 @@ QPixmap ScreenGrabber::cropToMonitor(const QPixmap& fullScreenshot,
 
     QRect cropRect(cropX, cropY, cropWidth, cropHeight);
 
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
     qDebug() << tr("Screen %1: %2").arg(monitorIndex).arg(targetScreen->name());
     qDebug() << tr("  Logical geometry: %1x%2+%3+%4 DPR: %5")
                   .arg(targetGeometry.width())
@@ -765,7 +765,7 @@ QPixmap ScreenGrabber::cropToMonitor(const QPixmap& fullScreenshot,
                                  targetPhysicalHeight,
                                  Qt::IgnoreAspectRatio,
                                  Qt::SmoothTransformation);
-#ifdef FLAMESHOT_DEBUG_CAPTURE
+#ifdef TILDESHOT_DEBUG_CAPTURE
         qDebug() << tr("Scaling screenshot to: %1 %2")
                       .arg(targetPhysicalWidth)
                       .arg(targetPhysicalHeight);

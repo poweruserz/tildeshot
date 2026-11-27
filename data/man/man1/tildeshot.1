@@ -2,7 +2,7 @@
 .\" (C) Copyright 2018 Boyuan Yang <073plan@gmail.com>,
 .\" This file is released under CC0 1.0 Universal (CC0-1.0) license.
 .\"
-.TH "FLAMESHOT" "1" "2021-11-11"
+.TH "TILDESHOT" "1" "2021-11-11"
 .\" Please adjust this date whenever revising the manpage.
 .\"
 .\" Some roff macros, for reference:
@@ -16,50 +16,50 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-Flameshot \- Powerful yet simple-to-use screenshot software
+Tildeshot \- Powerful yet simple-to-use screenshot software
 .SH SYNOPSIS
-.B flameshot
+.B tildeshot
 [subcommands] [arguments]
 .br
-.B flameshot gui
+.B tildeshot gui
 [gui arguments]
 .br
-.B flameshot screen
+.B tildeshot screen
 [screen arguments]
 .br
-.B flameshot full
+.B tildeshot full
 [fullscreen arguments]
 .br
-.B flameshot config
+.B tildeshot config
 [config arguments]
 .br
-.B flameshot launcher
+.B tildeshot launcher
 .br
 .
 .\"----------------------------------------------------------------------------
 .SH DESCRIPTION
 This manual page documents briefly the
-.B flameshot
+.B tildeshot
 command as provided by
-.B flameshot
+.B tildeshot
 package.
 .PP
-\fBflameshot\fP is a screenshot tool that aims to be powerful yet simple-to-use.
+\fBtildeshot\fP is a screenshot tool that aims to be powerful yet simple-to-use.
 Its notable features include a customizable appearance, in-app screenshot editing,
 D-Bus interface, tray icon support, experimental GNOME/KDE Wayland support,
 integration with Imgur and support for both GUI and CLI interface.
 .PP
-Besides the usage information about \fBflameshot\fR in this manpage, you can find similar information using \fBflameshot --help\fR. Same \fB--help\fR can be used for each subcommand as well to get the valid arguments for them. The detailed usage of \fBflameshot\fP is documented in the \fIREADME.md\fR file on the project's Git repository page:
-https://github.com/flameshot-org/flameshot
+Besides the usage information about \fBtildeshot\fR in this manpage, you can find similar information using \fBtildeshot --help\fR. Same \fB--help\fR can be used for each subcommand as well to get the valid arguments for them. The detailed usage of \fBtildeshot\fP is documented in the \fIREADME.md\fR file on the project's Git repository page:
+https://github.com/poweruserz/tildeshot
 .
 .\"----------------------------------------------------------------------------
 .SH "SUBCOMMANDS"
 .PP
-Per default without subcommands, \fBflameshot\fR runs Flameshot in the background and adds a tray icon for configuration. Note that it will not take a screenshot unless you define one of the modes though the subcommands. There are various subcommands that can be used to use flameshot in different modes:
+Per default without subcommands, \fBtildeshot\fR runs Tildeshot in the background and adds a tray icon for configuration. Note that it will not take a screenshot unless you define one of the modes though the subcommands. There are various subcommands that can be used to use tildeshot in different modes:
 .
 .TP
 .B gui
-Running Flameshot in \fBgui\fR mode would let the user select the region from which the screenshot should be taken and then allow them to annotate the screenshot.
+Running Tildeshot in \fBgui\fR mode would let the user select the region from which the screenshot should be taken and then allow them to annotate the screenshot.
 .
 .TP
 .B full
@@ -80,7 +80,7 @@ If no argument is provided, it will open the config window, otherwise it can cha
 .\"----------------------------------------------------------------------------
 .SH "ARGUMENTS"
 .PP
-Here we list all the arguments available for all subcommands. The subcommands that accept each argument are listed after each argument. Alternatively, you can use the \fBflameshot [subcommand] --help\fR to know the list of available arguments for each subcommand.
+Here we list all the arguments available for all subcommands. The subcommands that accept each argument are listed after each argument. Alternatively, you can use the \fBtildeshot [subcommand] --help\fR to know the list of available arguments for each subcommand.
 .
 .PP
 \-s, \-\-accept-on-select
@@ -125,7 +125,7 @@ Valid for subcommands: config
 .PP
 \-d, \-\-delay <milliseconds>
 .RS 4
-How many milliseconds should Flameshot wait before taking the screenshot
+How many milliseconds should Tildeshot wait before taking the screenshot
 .br
 Valid for subcommands: full, gui, screen
 .RE
@@ -245,51 +245,51 @@ Valid for subcommands: config
 .\"----------------------------------------------------------------------------
 .SH "EXAMPLE USAGE"
 .PP
-This section lists some of the most common usage of \fBflameshot\fR via
+This section lists some of the most common usage of \fBtildeshot\fR via
 command line.
 .
 .TP
-.B flameshot
-Start flameshot and have it running in background. If enabled,
+.B tildeshot
+Start tildeshot and have it running in background. If enabled,
 an icon will appear in the tray area of current desktop environment.
 .
 .TP
-.B flameshot gui
+.B tildeshot gui
 Capture with GUI.
 .
 .TP
-\fBflameshot gui\fR \-p /path/to/captures
+\fBtildeshot gui\fR \-p /path/to/captures
 Capture with GUI and custom save path.
 .
 .TP
-\fBflameshot gui\fR \-d 2000
+\fBtildeshot gui\fR \-d 2000
 Open GUI with a delay of 2 seconds.
 .
 .TP
-.B flameshot launcher
+.B tildeshot launcher
 Open a launcher dialog for advanced screenshot, such as custom
 time delay, etc.
 .
 .TP
-.B flameshot full \-\-help
-Shows help for \fBflameshot full\fR subcommand.
+.B tildeshot full \-\-help
+Shows help for \fBtildeshot full\fR subcommand.
 .
 .TP
-\fBflameshot full\fR -p /path/to/captures -d 5000
+\fBtildeshot full\fR -p /path/to/captures -d 5000
 Fullscreen capture with custom save path (no GUI) and time delay.
 .
 .TP
-\fBflameshot full\fR -c -p /path/to/captures
+\fBtildeshot full\fR -c -p /path/to/captures
 Fullscreen capture with custom savepath copying to clipboard.
 .
 .TP
-\fBflameshot screen\fR \-\-number <screen number>
+\fBtildeshot screen\fR \-\-number <screen number>
 Define the screen to capture. Will capture the screen containing the
 cursor by default.
 .
 .TP
-\fBflameshot screen\fR \-\-help
-Shows help for \fBflameshot screen\fR subcommand.
+\fBtildeshot screen\fR \-\-help
+Shows help for \fBtildeshot screen\fR subcommand.
 .
 .\"----------------------------------------------------------------------------
 .SH RETURN VALUE
@@ -303,15 +303,15 @@ You may also find more detailed online documentation on upstream project homepag
 .HP
 Upstream project homepage:
 .br
-• \m[blue]\fBhttps://flameshot.org\fR\m[]
+• \m[blue]\fBhttps://github.com/poweruserz/tildeshot\fR\m[]
 .br
-• \m[blue]\fBhttps://github.com/flameshot-org/flameshot\fR\m[]
+• \m[blue]\fBhttps://github.com/poweruserz/tildeshot\fR\m[]
 .
 .\"----------------------------------------------------------------------------
 .SH "AUTHOR"
 .PP
 .ad l
-.B Flameshot
+.B Tildeshot
 was initially written by
 .MT izhe@\:hotmail.es
 lupoDharkael
@@ -339,7 +339,7 @@ The following URL gives you a more complete list of contributors:
 .PP
 • The main code is licensed under GPLv3+
 .br
-• The logo of Flameshot is licensed under Free Art License v1.3
+• The logo of Tildeshot is licensed under Free Art License v1.3
 .br
 • The button icons are licensed under Apache License 2.0. See: \m[blue]\fBhttps://github.com/google/material-design-icons\fR\m[]
 .br
