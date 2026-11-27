@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> секунд</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>Зробити новий знімок</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Область:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>Запуск знімання</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Режим знімання</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Затримка:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>Монітор:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -270,13 +270,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot втратив фокус. Комбінації клавіш не працюватимуть, доки ви не клацнете мишею.</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot втратив фокус. Комбінації клавіш не працюватимуть, доки ви не клацнете мишею.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Помилку конфігурації усунуто. Щоб застосувати зміни, знову запустіть `flameshot gui`.</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>Помилку конфігурації усунуто. Щоб застосувати зміни, знову запустіть `tildeshot gui`.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -592,10 +592,10 @@ Press Space to open the side panel.</source>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Деякі комбінації клавіш конфліктують.
-Це НЕ завадить запуску Flameshot.
+Це НЕ завадить запуску Tildeshot.
 Усуньте конфлікти вручну у файлі конфігурації.</translation>
     </message>
     <message>
@@ -805,42 +805,42 @@ Please solve them manually in the configuration file.</source>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>Не вдалося закрити активні модальні вікна</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>URL скопійовано до буфера обміну.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="vanished">Доступна нова версія %1</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>У вас найновіша версія</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>Не вдалося отримати відомості про найновішу версію.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>Не вдалося підключитися через DBus</translation>
     </message>
@@ -920,8 +920,8 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">Запускати при старті системи</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Запускати Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Запускати Tildeshot</translation>
     </message>
     <message>
         <source>Show welcome message on launch</source>
@@ -1085,12 +1085,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Дозволити одночасно кілька екземплярів Flameshot GUI</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Дозволити одночасно кілька екземплярів Tildeshot GUI</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">Це дає змогу робити знімки екрана, наприклад, самого flameshot.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">Це дає змогу робити знімки екрана, наприклад, самого tildeshot.</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1101,8 +1101,8 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">Запускати при старті системи</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Запускати Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Запускати Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1192,12 +1192,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>Це, зокрема, дає змогу робити знімки самого Flameshot</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>Це, зокрема, дає змогу робити знімки самого Tildeshot</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Запускати фонову службу Flameshot під час завантаження комп’ютера</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Запускати фонову службу Tildeshot під час завантаження комп’ютера</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1239,8 +1239,8 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>Запускати Flameshot у фоні під час завантаження комп’ютера</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>Запускати Tildeshot у фоні під час завантаження комп’ютера</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1783,49 +1783,49 @@ Please solve them manually in the configuration file.</source>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>Про програму</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Піктограма</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>Ліцензія</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Версія</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>Відомості про ОС</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>Копіювати відомості</translation>
     </message>
@@ -2357,12 +2357,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>Не вдалося записати до</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Запитаний номер екрана перевищує кількість екранів</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Повноекранний знімок закріплено на екрані</translation>
     </message>
@@ -2405,8 +2405,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>Типово Flameshot запускається у фоновому режимі й додає піктограму в системний лоток для налаштування.</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>Типово Tildeshot запускається у фоновому режимі й додає піктограму в системний лоток для налаштування.</translation>
     </message>
     <message>
         <source>Hi, I&apos;m already running!
@@ -2551,8 +2551,8 @@ You can find me in the system tray.</source>
         <translation type="vanished">Універсальний адаптер захоплення екрана Wayland вимагає Grim як компонент захоплення екрана Wayland. Якщо компонент захоплення екрана відсутній, будь ласка, встановіть його!</translation>
     </message>
     <message>
-        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in flameshot.ini to activate the grim-based general wayland screenshot adapter</source>
-        <translation type="vanished">Якщо параметр useGrimAdapter не ввімкнено, буде використано протокол DBus. Слід зазначити, що використання протоколу DBus під керуванням Wayland не рекомендується. Рекомендується ввімкнути параметр useGrimAdapter у flameshot.ini, щоб активувати загальний адаптер скріншотів Wayland на основі Grim</translation>
+        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in tildeshot.ini to activate the grim-based general wayland screenshot adapter</source>
+        <translation type="vanished">Якщо параметр useGrimAdapter не ввімкнено, буде використано протокол DBus. Слід зазначити, що використання протоколу DBus під керуванням Wayland не рекомендується. Рекомендується ввімкнути параметр useGrimAdapter у tildeshot.ini, щоб активувати загальний адаптер скріншотів Wayland на основі Grim</translation>
     </message>
     <message>
         <source>grim&apos;s screenshot component is implemented based on wlroots, it may not be used in GNOME or similar desktop environments</source>
@@ -2742,8 +2742,8 @@ You can find me in the system tray.</source>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Щоб зміни набули чинності, перезапустіть Flameshot.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Щоб зміни набули чинності, перезапустіть Tildeshot.</translation>
     </message>
 </context>
 <context>
@@ -2865,13 +2865,13 @@ You can find me in the system tray.</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Схоже, Windows примусово відкриває власний засіб знімків після натискання клавіші «Print Screen». Вимкнути це, щоб Flameshot міг використовувати клавішу «Print Screen»?</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Схоже, Windows примусово відкриває власний засіб знімків після натискання клавіші «Print Screen». Вимкнути це, щоб Tildeshot міг використовувати клавішу «Print Screen»?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Щоб зміни набули чинності, перезапустіть Flameshot.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Щоб зміни набули чинності, перезапустіть Tildeshot.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2887,19 +2887,19 @@ You can find me in the system tray.</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
-        <translation>Зареєструвати Flameshot як застосунок MS-SCREENCLIP (потрібні права адміністратора)</translation>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Зареєструвати Tildeshot як застосунок MS-SCREENCLIP (потрібні права адміністратора)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>Після реєстрації Flameshot можна вибрати типовим застосунком для знімків екрана в параметрах Windows.</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>Після реєстрації Tildeshot можна вибрати типовим застосунком для знімків екрана в параметрах Windows.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Запустіть Flameshot ОДИН РАЗ від імені адміністратора й повторіть спробу!</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Запустіть Tildeshot ОДИН РАЗ від імені адміністратора й повторіть спробу!</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -3089,8 +3089,8 @@ You can find me in the system tray.</source>
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Відомості про Flameshot</translation>
+        <source>Tildeshot Info</source>
+        <translation>Відомості про Tildeshot</translation>
     </message>
 </context>
 <context>
@@ -3261,8 +3261,8 @@ You can find me in the system tray.</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Доступна нова версія Flameshot %1</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>Доступна нова версія Tildeshot %1</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3397,8 +3397,8 @@ You can find me in the system tray.</source>
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Щоб застосувати ці зміни, перезапустіть Flameshot!</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Щоб застосувати ці зміни, перезапустіть Tildeshot!</translation>
     </message>
 </context>
 <context>

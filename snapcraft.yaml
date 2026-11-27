@@ -1,9 +1,9 @@
-name: flameshot
+name: tildeshot
 version: '15.0.0'
 base: core24
 summary: Powerful yet simple to use screenshot software
 description: |
-  A powerful open source screenshot and annotation tool for Linux, Flameshot
+  A powerful open source screenshot and annotation tool for Linux, Tildeshot
   has a varied set of markup tools available, which include Freehand drawing,
   Lines, Arrows, Boxes, Circles, Highlighting, Blur. Additionally, you can
   customise the color, size and/or thickness of many of these image annotation
@@ -20,43 +20,42 @@ platforms:
 #    build-for: [arm64]
 
 apps:
-  flameshot:
-    command: usr/bin/flameshot
-    desktop: usr/share/applications/org.flameshot.Flameshot.desktop
-    common-id: org.flameshot.Flameshot
+  tildeshot:
+    command: usr/bin/tildeshot
+    desktop: usr/share/applications/org.tildeshot.Tildeshot.desktop
+    common-id: org.tildeshot.Tildeshot
     extensions: [kde-neon-6]
-    slots: [dbus-flameshot]
+    slots: [dbus-tildeshot]
     plugs:
       - home
       - gsettings
       - removable-media
 
 parts:
-  flameshot:
+  tildeshot:
     plugin: cmake
-    source: https://github.com/flameshot-org/flameshot.git
-    source-tag: v$SNAPCRAFT_PROJECT_VERSION
+    source: .
     build-packages:
       - libxkbcommon-dev
       - libproxy-dev
     cmake-parameters:
-      - -DFLAMESHOT_ICON=/snap/flameshot/current/usr/share/icons/hicolor/scalable/apps/flameshot.svg
+      - -DTILDESHOT_ICON=/snap/tildeshot/current/usr/share/icons/hicolor/scalable/apps/tildeshot.svg
       - -DCMAKE_INSTALL_PREFIX=/usr
       - -DUSE_WAYLAND_CLIPBOARD=1
     override-build: |
       craftctl default
-      sed -i 's|^Icon=.*|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/org.flameshot.Flameshot.svg|' ${CRAFT_PART_INSTALL}/usr/share/applications/org.flameshot.Flameshot.desktop
-      sed -i 's/^\(Name\(\[.\+\]\)\?=.*\)$/\1 [Snap]/g' ${CRAFT_PART_INSTALL}/usr/share/applications/org.flameshot.Flameshot.desktop
+      sed -i 's|^Icon=.*|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/org.tildeshot.Tildeshot.svg|' ${CRAFT_PART_INSTALL}/usr/share/applications/org.tildeshot.Tildeshot.desktop
+      sed -i 's/^\(Name\(\[.\+\]\)\?=.*\)$/\1 [Snap]/g' ${CRAFT_PART_INSTALL}/usr/share/applications/org.tildeshot.Tildeshot.desktop
 
 slots:
   # Depending on in which environment we're running we either need
   # to use the system or session DBus so we also need to have one
   # slot for each.
-  dbus-flameshot:
+  dbus-tildeshot:
     interface: dbus
     bus: session
-    name: org.flameshot.Flameshot
+    name: org.tildeshot.Tildeshot
 
 layout:
-  /usr/share/flameshot/translations:
-    symlink: $SNAP/usr/share/flameshot/translations
+  /usr/share/tildeshot/translations:
+    symlink: $SNAP/usr/share/tildeshot/translations

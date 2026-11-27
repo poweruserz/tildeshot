@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> detik</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>Ambil tangkapan layar baru</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Area:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>Peluncur Penangkap</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Mode Penangkapan</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Jeda:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>Monitor:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -271,13 +271,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot telah kehilangan fokus. Pintasan keyboard tidak akan berfungsi sampai Anda mengklik di suatu tempat.</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot telah kehilangan fokus. Pintasan keyboard tidak akan berfungsi sampai Anda mengklik di suatu tempat.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Kesalahan konfigurasi teratasi. Jalankan `flameshot gui` lagi untuk menerapkannya.</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>Kesalahan konfigurasi teratasi. Jalankan `tildeshot gui` lagi untuk menerapkannya.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -589,10 +589,10 @@ Press Space to open the side panel.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Beberapa pintasan papan ketik memiliki konflik.
-Ini TIDAK akan menahan flameshot untuk memulai.
+Ini TIDAK akan menahan tildeshot untuk memulai.
 Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
     <message>
@@ -701,7 +701,7 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation type="vanished">&amp;Hentikan Flameshot</translation>
+        <translation type="vanished">&amp;Hentikan Tildeshot</translation>
     </message>
     <message>
         <source>&amp;Take Screenshot</source>
@@ -798,42 +798,42 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>Tidak dapat menutup widget modal aktif</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>URL disalin ke papan klip.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="vanished">Versi baru %1 tersedia</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>Anda telah menggunakan versi terbaru</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>Gagal mendapatkan informasi tentang versi terbaru.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>Tidak dapat terhubung via DBus</translation>
     </message>
@@ -1006,12 +1006,12 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Izinkan beberapa instance flameshot GUI secara bersamaan</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Izinkan beberapa instance tildeshot GUI secara bersamaan</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">Ini memungkinkan Anda untuk mengambil screenshot dari flameshot itu sendiri misalnya.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">Ini memungkinkan Anda untuk mengambil screenshot dari tildeshot itu sendiri misalnya.</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1022,8 +1022,8 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
         <translation type="vanished">Luncurkan saat startup</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Luncurkan Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Luncurkan Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1113,12 +1113,12 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
         <translation>Hal ini memungkinkan Anda untuk mengambil cuplikan layar dari nyala api sendiri misalnya</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Luncurkan Jurik Flameshot ketika komputer dinyalakan</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Luncurkan Jurik Tildeshot ketika komputer dinyalakan</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1160,8 +1160,8 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>Luncurkan daemon Flameshot (proses latar belakang) ketika komputer diboot</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>Luncurkan daemon Tildeshot (proses latar belakang) ketika komputer diboot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1621,49 +1621,49 @@ Silakan atasi mereka secara manual di berkas konfigurasi.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>Tentang</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Ikon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>Lisensi</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPL v3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Versi</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>Info OS</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>Salin Info</translation>
     </message>
@@ -2225,8 +2225,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>Per default menjalankan Flameshot di latar belakang dan menambahkan ikon baki untuk konfigurasi.</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>Per default menjalankan Tildeshot di latar belakang dan menambahkan ikon baki untuk konfigurasi.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="83"/>
@@ -2234,12 +2234,12 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
         <translation>Halo, Saya disini! Klik ikon di baki untuk mengambil screenshot atau klik dengan tombol kanan untuk melihat opsi lebih banyak.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Layar yang diminta melampaui jumlah layar</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Screenshot layar penuh disematkan ke layar</translation>
     </message>
@@ -2375,8 +2375,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
         <translation type="vanished">Adapter tangkapan layar wayland universal membutuhkan Grim sebagai komponen tangkapan layar wayland. Jika komponen tangkapan layar tidak ada, silakan pasang!</translation>
     </message>
     <message>
-        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in flameshot.ini to activate the grim-based general wayland screenshot adapter</source>
-        <translation type="vanished">Jika pengaturan useGrimAdapter tidak diaktifkan, protokol dbus akan digunakan. Perlu dicatat bahwa penggunaan protokol dbus di wayland tidak disarankan. Disarankan untuk mengaktifkan pengaturan useGrimAdapter di flameshot.ini untuk mengaktifkan adaptor tangkapan layar wayland umum berbasis grim</translation>
+        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in tildeshot.ini to activate the grim-based general wayland screenshot adapter</source>
+        <translation type="vanished">Jika pengaturan useGrimAdapter tidak diaktifkan, protokol dbus akan digunakan. Perlu dicatat bahwa penggunaan protokol dbus di wayland tidak disarankan. Disarankan untuk mengaktifkan pengaturan useGrimAdapter di tildeshot.ini untuk mengaktifkan adaptor tangkapan layar wayland umum berbasis grim</translation>
     </message>
     <message>
         <source>grim&apos;s screenshot component is implemented based on wlroots, it may not be used in GNOME or similar desktop environments</source>
@@ -2566,8 +2566,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Flameshot harus di mulai ulang agar perubahan diterapkan.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Tildeshot harus di mulai ulang agar perubahan diterapkan.</translation>
     </message>
 </context>
 <context>
@@ -2689,13 +2689,13 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Sepertinya, bahwa Windows memaksakan untuk membuka alat tangkapan layarnya ketika tombol &apos;Print Screen&apos; ditekan. Apakah Anda ingin menonaktifkan ini jadi Flameshot dapat menggunakan tombol &apos;Print Screen&apos;?</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Sepertinya, bahwa Windows memaksakan untuk membuka alat tangkapan layarnya ketika tombol &apos;Print Screen&apos; ditekan. Apakah Anda ingin menonaktifkan ini jadi Tildeshot dapat menggunakan tombol &apos;Print Screen&apos;?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Flameshot harus di mulai ulang agar perubahan berlaku.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Tildeshot harus di mulai ulang agar perubahan berlaku.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2711,19 +2711,19 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
-        <translation>Daftar Flameshot sebagai aplikasi MS-SCREENCLIP (hak akses administrator diperlukan)</translation>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Daftar Tildeshot sebagai aplikasi MS-SCREENCLIP (hak akses administrator diperlukan)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>Setelah mendaftar, Anda dapat memilih Flameshot sebagai aplikasi tangkapan layar bawaan di Pengaturan Windows.</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>Setelah mendaftar, Anda dapat memilih Tildeshot sebagai aplikasi tangkapan layar bawaan di Pengaturan Windows.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Anda mungkin memulai Flameshot sebagai administrator SEKALI dan coba lagi!</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Anda mungkin memulai Tildeshot sebagai administrator SEKALI dan coba lagi!</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -2917,8 +2917,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Info Flameshot</translation>
+        <source>Tildeshot Info</source>
+        <translation>Info Tildeshot</translation>
     </message>
 </context>
 <context>
@@ -3089,8 +3089,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Versi Flameshot terbaru %1 tersedia</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>Versi Tildeshot terbaru %1 tersedia</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3206,8 +3206,8 @@ Anda mungkin perlu untuk escape dari tanda &apos;#&apos; seperti pada &apos;\#FF
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Flameshot harus dimulai ulang untuk menerapkan perubahan ini!</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Tildeshot harus dimulai ulang untuk menerapkan perubahan ini!</translation>
     </message>
 </context>
 <context>

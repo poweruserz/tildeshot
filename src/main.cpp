@@ -13,8 +13,8 @@
 #include "config/cacheutils.h"
 #include "config/styleoverride.h"
 #include "core/capturerequest.h"
-#include "core/flameshot.h"
-#include "core/flameshotdaemon.h"
+#include "core/tildeshot.h"
+#include "core/tildeshotdaemon.h"
 #include "utils/abstractlogger.h"
 #include "utils/confighandler.h"
 #include "utils/filenamehandler.h"
@@ -22,7 +22,7 @@
 #include "utils/valuehandler.h"
 
 #if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-#include "core/flameshotdbusadapter.h"
+#include "core/tildeshotdbusadapter.h"
 #include <QDBusConnection>
 #include <QDBusMessage>
 #endif
@@ -65,22 +65,22 @@ static int setup_unix_signal_handlers()
 
 int requestCaptureAndWait(const CaptureRequest& req)
 {
-    Flameshot* flameshot = Flameshot::instance();
-    flameshot->requestCapture(req);
-    QObject::connect(flameshot, &Flameshot::captureTaken, [&](const QPixmap&) {
+    Tildeshot* tildeshot = Tildeshot::instance();
+    tildeshot->requestCapture(req);
+    QObject::connect(tildeshot, &Tildeshot::captureTaken, [&](const QPixmap&) {
 #if defined(Q_OS_MACOS)
         // Only useful on MacOS because each instance hosts its own widgets
-        if (!FlameshotDaemon::isThisInstanceHostingWidgets()) {
+        if (!TildeshotDaemon::isThisInstanceHostingWidgets()) {
             qApp->exit(0);
         }
 #else
         // if this instance is not daemon, make sure it exit after caputre finish
-        if (FlameshotDaemon::instance() == nullptr && !Flameshot::instance()->haveExternalWidget()) {
+        if (TildeshotDaemon::instance() == nullptr && !Tildeshot::instance()->haveExternalWidget()) {
             qApp->exit(E_OK);
         }
 #endif
     });
-    QObject::connect(flameshot, &Flameshot::captureFailed, []() {
+    QObject::connect(tildeshot, &Tildeshot::captureFailed, []() {
         AbstractLogger::Target logTarget = static_cast<AbstractLogger::Target>(
           ConfigHandler().showAbortNotification()
             ? AbstractLogger::Target::Default
@@ -94,7 +94,7 @@ int requestCaptureAndWait(const CaptureRequest& req)
 
 QSharedMemory* guiMutexLock()
 {
-    QString key = "org.flameshot.Flameshot-" APP_VERSION;
+    QString key = "org.tildeshot.Tildeshot-" APP_VERSION;
     auto* shm = new QSharedMemory(key);
 #ifdef Q_OS_UNIX
     // Destroy shared memory if the last instance crashed on Unix
@@ -149,11 +149,11 @@ void configureTranslation(QTranslator& translator, QTranslator& qtTranslator)
         if (ConfigHandler().uiLanguage() == QStringLiteral("auto")) {
             QLocale l;
             qWarning() << QStringLiteral(
-                            "No Flameshot translation found for %1")
+                            "No Tildeshot translation found for %1")
                             .arg(l.uiLanguages().join(", "));
         } else {
             qWarning() << QStringLiteral(
-                            "No Flameshot translation found for %1")
+                            "No Tildeshot translation found for %1")
                             .arg(ConfigHandler().uiLanguage());
         }
     }
@@ -221,11 +221,11 @@ int main(int argc, char* argv[])
     qRegisterMetaType<QList<int>>();
 
     QCoreApplication::setApplicationVersion(APP_VERSION);
-    QCoreApplication::setApplicationName(QStringLiteral("flameshot"));
-    QCoreApplication::setOrganizationName(QStringLiteral("flameshot"));
+    QCoreApplication::setApplicationName(QStringLiteral("tildeshot"));
+    QCoreApplication::setOrganizationName(QStringLiteral("tildeshot"));
     QNetworkProxyFactory::setUseSystemConfiguration(true);
 
-    // no arguments, just launch Flameshot
+    // no arguments, just launch Tildeshot
     if (argc == 1) {
         QApplication app(argc, argv);
         configureTranslation(translator, qtTranslator);
@@ -236,7 +236,7 @@ int main(int argc, char* argv[])
         auto signalDaemon = SignalDaemon();
 #endif
         auto kdsa =
-          KDSingleApplication(QStringLiteral("org.flameshot.Flameshot"));
+          KDSingleApplication(QStringLiteral("org.tildeshot.Tildeshot"));
 
         if (!kdsa.isPrimaryInstance() &&
             !ConfigHandler().allowMultipleGuiInstances()) {
@@ -245,8 +245,8 @@ int main(int argc, char* argv[])
 #endif
 
         configureApp(true, translator, qtTranslator);
-        auto c = Flameshot::instance();
-        FlameshotDaemon::start();
+        auto c = Tildeshot::instance();
+        TildeshotDaemon::start();
 
 #if defined(USE_KDSINGLEAPPLICATION) &&                                        \
   (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
@@ -254,20 +254,20 @@ int main(int argc, char* argv[])
             QObject::connect(
               &kdsa,
               &KDSingleApplication::messageReceived,
-              FlameshotDaemon::instance(),
-              &FlameshotDaemon::messageReceivedFromSecondaryInstance);
+              TildeshotDaemon::instance(),
+              &TildeshotDaemon::messageReceivedFromSecondaryInstance);
         }
 #endif
 
 #if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-        new FlameshotDBusAdapter(c);
+        new TildeshotDBusAdapter(c);
         QDBusConnection dbus = QDBusConnection::sessionBus();
         if (!dbus.isConnected()) {
             AbstractLogger::error()
               << QObject::tr("Unable to connect via DBus");
         }
         dbus.registerObject(QStringLiteral("/"), c);
-        dbus.registerService(QStringLiteral("org.flameshot.Flameshot"));
+        dbus.registerService(QStringLiteral("org.tildeshot.Tildeshot"));
 #endif
         return qApp->exec();
     }
@@ -282,7 +282,7 @@ int main(int argc, char* argv[])
     // Add description
     parser.setDescription(
       QObject::tr("Powerful yet simple to use screenshot software."));
-    parser.setGeneralErrorMessage(QObject::tr("See") + " flameshot --help.");
+    parser.setGeneralErrorMessage(QObject::tr("See") + " tildeshot --help.");
     // Arguments
     CommandArgument fullArgument(
       QStringLiteral("full"),
@@ -293,7 +293,7 @@ int main(int argc, char* argv[])
       QStringLiteral("gui"),
       QObject::tr("Start a manual capture in GUI mode."));
     CommandArgument configArgument(QStringLiteral("config"),
-                                   QObject::tr("Configure") + " flameshot.");
+                                   QObject::tr("Configure") + " tildeshot.");
     CommandArgument screenArgument(
       QStringLiteral("screen"),
       QObject::tr("Capture a screenshot of the specified monitor."));
@@ -472,17 +472,17 @@ int main(int argc, char* argv[])
 
     // PROCESS DATA
     //--------------
-    Flameshot::setOrigin(Flameshot::CLI);
+    Tildeshot::setOrigin(Tildeshot::CLI);
     if (parser.isSet(helpOption) || parser.isSet(versionOption)) {
     } else if (parser.isSet(launcherArgument)) { // LAUNCHER
         reinitializeAsQApplication(argc, argv, translator, qtTranslator);
-        Flameshot* flameshot = Flameshot::instance();
-        flameshot->launcher();
+        Tildeshot* tildeshot = Tildeshot::instance();
+        tildeshot->launcher();
         qApp->exec();
     } else if (parser.isSet(guiArgument)) { // GUI
         reinitializeAsQApplication(argc, argv, translator, qtTranslator);
 
-        // Prevent multiple instances of 'flameshot gui' from running if not
+        // Prevent multiple instances of 'tildeshot gui' from running if not
         // configured to do so.
         if (!ConfigHandler().allowMultipleGuiInstances()) {
             auto* mutex = guiMutexLock();
@@ -602,7 +602,7 @@ int main(int argc, char* argv[])
                 AbstractLogger::error()
                   << "The 'screen' command does not support "
                      "'--region screen<N>'.\n"
-                     "See flameshot --help.\n";
+                     "See tildeshot --help.\n";
                 exit(1);
             }
             req.setInitialSelection(Region().value(region).toRect());
@@ -655,7 +655,7 @@ int main(int argc, char* argv[])
             reinitializeAsQApplication(argc, argv, translator, qtTranslator);
             QObject::connect(
               qApp, &QApplication::lastWindowClosed, qApp, &QApplication::quit);
-            Flameshot::instance()->config();
+            Tildeshot::instance()->config();
             qApp->exec();
         } else {
             ConfigHandler config;

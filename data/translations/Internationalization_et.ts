@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> sekundit</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>Tee uus ekraanitõmmis</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Ala:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>Ekraanitõmmise käivitaja</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Ekraanitõmmise tegemise viis</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Viivitus:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>Ekraan:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>LxK+x+y</translation>
     </message>
@@ -271,13 +271,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot on kaotanud fookuse. Klaviatuuri kiirklahvid ei toimi enne, kui oled kuhugile klõpsinud.</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot on kaotanud fookuse. Klaviatuuri kiirklahvid ei toimi enne, kui oled kuhugile klõpsinud.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Seadistusviga on lahendatud. Rakendamiseks käivita „flameshot gui“ uuesti.</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>Seadistusviga on lahendatud. Rakendamiseks käivita „tildeshot gui“ uuesti.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -581,10 +581,10 @@ Premeu Espai per obrir el calaix lateral.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Mõnedes klahvistiku kiirklahvides leidub konflikte.
-See aga EI TAKISTA Flameshoti käivitumist.
+See aga EI TAKISTA Tildeshoti käivitumist.
 Palun lahenda vead käsitsi seadistusfailis.</translation>
     </message>
     <message>
@@ -790,42 +790,42 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>Aktiivseid modaalseid vidinaid ei õnnestu sulgeda</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>Võrguaadress on kopeeritud lõikelauale.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="vanished">Uus versioon %1 on saadaval</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>Sul on kasutusel viimane versioon</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>Viimase versiooni teabe laadimine ei õnnestunud.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>DBus-i kaudu ühendamine ei õnnestu</translation>
     </message>
@@ -998,12 +998,12 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Luba mitmel Flameshoti programmi kasutajaliidesel korraga töötada</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Luba mitmel Tildeshoti programmi kasutajaliidesel korraga töötada</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">This allows you to take screenshots of flameshot itself for example.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">This allows you to take screenshots of tildeshot itself for example.</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1014,8 +1014,8 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
         <translation type="vanished">Llança a l&apos;inici</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Inicia el Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Inicia el Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1097,12 +1097,12 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>See näiteks võimaldab sul teha ekraanitõmmist Flameshotist endast</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>See näiteks võimaldab sul teha ekraanitõmmist Tildeshotist endast</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Launch Tildeshot daemon when computer is booted</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1144,8 +1144,8 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>Arvuti käivitamisel käivita Flameshot taustateenusena</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>Arvuti käivitamisel käivita Tildeshot taustateenusena</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1605,49 +1605,49 @@ Palun lahenda vead käsitsi seadistusfailis.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Ikoon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>Litsents</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPL-i versioon 3 või suurem</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Versioon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshoti versioon</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshoti versioon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>Operatsioonisüsteemi teave</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>Kopeeri see teave</translation>
     </message>
@@ -2157,12 +2157,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>Faili kirjutamine ei õnnestu</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Soovitud ekraaninumber on suurem, kui leiduvate ekraanide arv</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Ekraanile kinnitatud tõmmis täisekraanivaatest</translation>
     </message>
@@ -2205,7 +2205,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
         <translation>Vaikimisi käivitud Flamshot taustal ja lisab seadistamiseks süsteemisalve ikooni.</translation>
     </message>
     <message>
@@ -2516,8 +2516,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Muudatuste jõustumiseks palun käivita Flameshot uuesti.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Muudatuste jõustumiseks palun käivita Tildeshot uuesti.</translation>
     </message>
 </context>
 <context>
@@ -2639,13 +2639,13 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Tundub, et Windows avab „Print Screen“ klahvi vajutamisel sundkorras oma ekraanitõmmistustarkvara. Kas tahaksid selle lülitada välja ja „Print Screen“ klahvi vajutamisel käivituks Flameshot?</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Tundub, et Windows avab „Print Screen“ klahvi vajutamisel sundkorras oma ekraanitõmmistustarkvara. Kas tahaksid selle lülitada välja ja „Print Screen“ klahvi vajutamisel käivituks Tildeshot?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Muudatuste jõustumiseks palun käivita Flameshot uuesti.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Muudatuste jõustumiseks palun käivita Tildeshot uuesti.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2661,19 +2661,19 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>Peale registreerimist saad Flameshoti valida Windowsi seadistustest vaikimisi ekraanitõmmistustarkvarana.</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>Peale registreerimist saad Tildeshoti valida Windowsi seadistustest vaikimisi ekraanitõmmistustarkvarana.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Sa võid ÜKS kord käivitada Flameshoti peakasutaja õigustes ja seda uuesti proovida!</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Sa võid ÜKS kord käivitada Tildeshoti peakasutaja õigustes ja seda uuesti proovida!</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -2863,8 +2863,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Flameshoti teave</translation>
+        <source>Tildeshot Info</source>
+        <translation>Tildeshoti teave</translation>
     </message>
 </context>
 <context>
@@ -3035,8 +3035,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Flameshoti uus versioon %1 on saadaval</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>Tildeshoti uus versioon %1 on saadaval</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3152,8 +3152,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Nende muudatuste jõustamiseks pead Flameshoti uuesti käivitama!</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Nende muudatuste jõustamiseks pead Tildeshoti uuesti käivitama!</translation>
     </message>
 </context>
 <context>

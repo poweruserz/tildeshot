@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.tildeshot.Tildeshot
+Exec=${CMAKE_INSTALL_FULL_BINDIR}/tildeshot

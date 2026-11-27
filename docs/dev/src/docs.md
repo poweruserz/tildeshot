@@ -38,10 +38,12 @@ inconsistencies are few and minor.
 ## Dependencies
 ```shell
 pip install \
-    mkdocs \
-    mkdocs-material \
+    mkdocs==1.6.1 \
+    mkdocs-material==9.7.7 \
     git+https://github.com/veracioux/mkdoxy@v1.0.0
 ```
+
+Use doxygen 1.9.1 (Ubuntu 22.04); doxygen 1.9.4 makes mkdoxy 1.0.0 crash.
 
 !!! note
 
@@ -50,86 +52,29 @@ pip install \
 
 ## Deployment
 
-The developer documentation is served from the official Flameshot website
-[flameshot.org][website]. Here's how.
+The developer documentation is served with GitHub Pages at
+[poweruserz.github.io/tildeshot][website].
 
-The official website itself is served from this [repo][website-repo]. That repo
-contains the user documentation. It's deployed using GitHub pages -- the served
-files can be found on the [gh-pages][] branch of that repo. This branch is
-automatically created by the [build][website-build] workflow on master.
+The [deploy-dev-docs][] workflow runs on every push to `master` that touches
+`src/`, `docs/dev/` or the workflow itself. It builds the docs, uploads
+`docs/dev/output` as a Pages artifact and deploys it. No branch or access token
+is involved; the workflow uses the repository's own Pages permissions.
 
-To make the developer docs available on the official site, we use a custom
-GitHub action called [deploy-dev-docs][] in the [flameshot][] repo. This action
-will build and deploy this documentation into the `docs/dev` subdirectory of the
-[gh-pages][] branch.
-
-### The deploy-dev-docs GitHub workflow
-
-This workflow checks out the flameshot website [repo][website-repo] and does the following:
-
-- Creates a clean [dev-docs-staging][] branch (we'll explain why, below).
-- Generates the developer docs under `docs/dev` there and makes a commit
-- Checks out the [gh-pages][] branch and makes the same commit there
-- Force-pushes the dev-docs-staging branch to the website repo
-- Pushes the gh-pages branch to the website repo
-
-Since the [gh-pages][] branch is re-created from scratch by the [website
-deployment workflow][website-build], the commit that added the developer
-documentation will be lost. That's why we have to re-apply the commit during the
-[website deployment workflow][website-build] as well. **That is the reason why
-we created the** [**dev-docs-staging**][dev-docs-staging] **branch in the first
-place.**
-
-!!! note
-
-    The deploy-dev-docs workflow is set to run on the `docs` branch as well as `master`.
-    This branch is used for debugging the developer docs and its associated
-    workflows, without polluting the `master` branch with unnecessary commits.
-
-#### Access tokens
-In order to make changes to the [website repo][website-repo] from within a
-workflow in the [flameshot repo][flameshot], the workflow needs to use an access
-token, which it obtains from the `TOKEN_PUSH_TO_WEBSITE_REPO` secret.
-
-The following process was used to set it up:
-
-1. A flameshot organization member with write access must create a personal
-   access token (PAT) [here][PAT] with write access to the [website repo][website-repo].
-2. A secret named `TOKEN_PUSH_TO_WEBSITE_REPO` must be added to the
-   [flameshot][] repo and its value must be set to the PAT. This can be done
-   [here][action-secrets].
-
-For best security practice, the token should be set to expire after some time
-(currently ~6 months). The token can be regenerated without the need to recreate
-it. After regeneration you will need to update the `TOKEN_PUSH_TO_WEBSITE_REPO`
-secret, which can be done [here][edit-secret].
-
-!!! tip
-
-    The currently active PAT is owned by [veracioux][] and is set to expire on July
-    31 2024. If you notice the token has expired, ask him to re-generate it.
+GitHub Pages must be enabled in the repository settings with **GitHub Actions**
+as the source.
 
 <!-- Internal links -->
 [post-processing]: #post-processing
 [serving-locally]: #serving-locally
 
-<!-- Flameshot-related pages -->
-[flameshot]: https://github.com/flameshot-org/flameshot
-[website]: https://flameshot.org
-[doc-source]: https://github.com/flameshot-org/flameshot/tree/master/docs/dev
-[website-repo]: https://github.com/flameshot-org/flameshot-org.github.io
-[gh-pages]: https://github.com/flameshot-org/flameshot-org.github.io/tree/gh-pages
-[dev-docs-staging]: https://github.com/flameshot-org/flameshot-org.github.io/tree/dev-docs-staging
-[action-secrets]: https://github.com/flameshot-org/flameshot/settings/secrets/actions
-[edit-secret]: https://github.com/flameshot-org/flameshot/settings/secrets/actions/TOKEN_PUSH_TO_WEBSITE_REPO
+<!-- Tildeshot-related pages -->
+[website]: https://poweruserz.github.io/tildeshot/
+[doc-source]: https://github.com/poweruserz/tildeshot/tree/master/docs/dev
 
-<!-- Files in flameshot repo -->
-[mkdocs.yml]: https://github.com/flameshot-org/flameshot/blob/master/docs/dev/mkdocs.yml
-[post-process.sh]: https://github.com/flameshot-org/flameshot/blob/master/docs/dev/post-process.sh
-[deploy-dev-docs]: https://github.com/flameshot-org/flameshot/blob/master/.github/workflows/deploy-dev-docs.yml
-
-<!-- Files in flameshot website repo -->
-[website-build]: https://github.com/flameshot-org/flameshot-org.github.io/blob/master/.github/workflows/build.yml
+<!-- Files in tildeshot repo -->
+[mkdocs.yml]: https://github.com/poweruserz/tildeshot/blob/master/docs/dev/mkdocs.yml
+[post-process.sh]: https://github.com/poweruserz/tildeshot/blob/master/docs/dev/post-process.sh
+[deploy-dev-docs]: https://github.com/poweruserz/tildeshot/blob/master/.github/workflows/deploy-dev-docs.yml
 
 <!-- External pages -->
 [markdown:reference-style-links]: https://www.markdownguide.org/basic-syntax/#reference-style-links
@@ -137,5 +82,3 @@ secret, which can be done [here][edit-secret].
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material
 [mkdoxy-original]: https://github.com/JakubAndrysek/mkdoxy
 [mkdoxy]: https://github.com/veracioux/mkdoxy
-[PAT]: https://github.com/settings/tokens?type=beta
-[veracioux]: https://github.com/veracioux

@@ -1,16 +1,16 @@
-# Flameshot Security Policy
+# Tildeshot Security Policy
 
 ## Supported Versions
 
-Only the **latest stable release** of Flameshot, or the **HEAD of the master branch**, is actively supported with security updates. If you discover a vulnerability, please verify if it persists in the current version before reporting.
+Only the **latest stable release** of Tildeshot, or the **HEAD of the master branch**, is actively supported with security updates. If you discover a vulnerability, please verify if it persists in the current version before reporting.
 
 ## Reporting a Vulnerability
 
-We take the security of our software seriously. If you believe you have found a security vulnerability in Flameshot, please report it to the development team responsibly. Please avoid framing a non-security bug as a security bug.
+We take the security of our software seriously. If you believe you have found a security vulnerability in Tildeshot, please report it to the development team responsibly. Please avoid framing a non-security bug as a security bug.
 
-To report a vulnerability, please use [our GitHub security section](https://github.com/flameshot-org/flameshot/security "URL to the security page") or email admin@flameshot.org with the necessary details. Do not open a public GitHub issue for security disclosures.
+To report a vulnerability, please use [our GitHub security section](https://github.com/poweruserz/tildeshot/security "URL to the security page") with the necessary details. Do not open a public GitHub issue for security disclosures.
 
-If you are not sure whether something is a security flaw or vulnerability, send an email to admin@flameshot.org, and we will do our best to figure it out together.
+If you are not sure whether something is a security flaw or vulnerability, report it there anyway, and we will do our best to figure it out together.
 
 ## Report Requirements
 
@@ -36,7 +36,7 @@ To protect our volunteers' time, the following types of reports are considered o
 
 Upon receiving the report, the following will happen on our side:
 
-1. **Acknowledgment**: If sent via email, we will acknowledge receipt of your report; otherwise, it is already documented in the GitHub repo.
+1. **Acknowledgment**: Your report is recorded in the GitHub security section, and we will acknowledge it there.
 2. **Triage**: The development team will validate the finding using your reproduction steps.
 3. **Fix & Advisory**: If verified, we will work on a mitigation and coordinate a release date for the fix alongside a public security advisory.
 

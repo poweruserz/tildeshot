@@ -1,7 +1,7 @@
-Source: flameshot
+Source: tildeshot
 Section: graphics
 Priority: optional
-Maintainer: Boyuan Yang <byang@debian.org>
+Maintainer: poweruserz <55040543+poweruserz@users.noreply.github.com>
 Build-Depends:
  cmake (>= 3.22~),
  debhelper (>= 12),
@@ -13,11 +13,11 @@ Build-Depends:
  libgl-dev,
 Rules-Requires-Root: no
 Standards-Version: 4.7.2
-Homepage: https://flameshot.org/
-Vcs-Browser: https://github.com/flameshot-org/flameshot
-Vcs-Git: https://github.com/flameshot-org/flameshot.git
+Homepage: https://github.com/poweruserz/tildeshot
+Vcs-Browser: https://github.com/poweruserz/tildeshot
+Vcs-Git: https://github.com/poweruserz/tildeshot.git
 
-Package: flameshot
+Package: tildeshot
 Architecture: any
 # Ubuntu noble expanded shlibs are suffixed with t64 for Qt dependencies, later versions of Ubuntu reverted back without suffix so make it future proof
 # ${shlibs:Depends},
@@ -42,7 +42,7 @@ Suggests:
  openssl,
  qt6-image-formats-plugins,
 Description: Powerful yet simple-to-use screenshot software
- Flameshot is a powerful yet simple-to-use screenshot software.
+ Tildeshot is a powerful yet simple-to-use screenshot software.
  Notable features include customizable appearance, in-app screenshot editing,
  D-Bus interface, experimental GNOME/KDE Wayland support, integration with
  Imgur and support for both GUI and CLI interface.

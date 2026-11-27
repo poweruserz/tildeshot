@@ -1,0 +1,34 @@
+[Custom Commands][net.local.tildeshot-2.desktop]
+Exec=tildeshot gui --delay 3000
+Name=Take screenshot with delay
+
+[Custom Commands][net.local.tildeshot-3.desktop]
+Exec=tildeshot full
+Name=Take full-screen screenshot and save
+
+[Custom Commands][net.local.tildeshot-4.desktop]
+Exec=tildeshot full --clipboard
+Name=Take full-screen screenshot and copy it to clipboard
+
+[Custom Commands][net.local.tildeshot-5.desktop]
+Exec=tildeshot launcher
+Name=Open Tildeshot Launcher
+
+[Custom Commands][net.local.tildeshot.desktop]
+Exec=tildeshot gui
+Name=Take screenshot
+
+[net.local.tildeshot-2.desktop][Global Shortcuts]
+_launch=Ctrl+Print
+
+[net.local.tildeshot-3.desktop][Global Shortcuts]
+_launch=Shift+Print
+
+[net.local.tildeshot-4.desktop][Global Shortcuts]
+_launch=Ctrl+Shift+Print
+
+[net.local.tildeshot-5.desktop][Global Shortcuts]
+_launch=
+
+[net.local.tildeshot.desktop][Global Shortcuts]
+_launch=Print

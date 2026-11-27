@@ -20,13 +20,13 @@ on:
   workflow_dispatch:
 
 env:
-  PRODUCT: flameshot
+  PRODUCT: tildeshot
   RELEASE: 1
-  # dockerfiles, see https://github.com/flameshot-org/flameshot-dockerfiles
-  # docker images, see https://quay.io/repository/flameshot-org/ci-building
-  DOCKER_REPO: quay.io/flameshot-org/ci-building
-  # building tool: https://github.com/flameshot-org/packpack
-  PACKPACK_REPO: flameshot-org/packpack
+  # dockerfiles, see https://github.com/poweruserz/tildeshot-dockerfiles
+  # docker images, see https://github.com/users/poweruserz/packages/container/package/ci-building
+  DOCKER_REPO: ghcr.io/poweruserz/ci-building
+  # building tool: https://github.com/poweruserz/packpack
+  PACKPACK_REPO: poweruserz/packpack
 
 jobs:
   deb-pack:
@@ -110,20 +110,20 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - name: Set env & Print flameshot version
+      - name: Set env & Print tildeshot version
         shell: bash
         run: |
           last_committed_tag=$(git tag -l --sort=-v:refname | head -1)
           git_revno=$(git rev-list $(git describe --tags --abbrev=0)..HEAD --count)
           git_hash=$(git rev-parse --short HEAD)
           ver_info=${last_committed_tag}+git${git_revno}.${git_hash}
-          echo "=======FLAMESHOT VERSION========"
+          echo "=======TILDESHOT VERSION========"
           echo ${last_committed_tag:1}
           echo "Details: ${ver_info}"
           echo "================================"
           # This will allow to build pre-preleases without git tag
           # echo "VERSION=${last_committed_tag:1}" >> $GITHUB_ENV
-          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*FLAMESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
+          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*TILDESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
           echo "VER_INFO=${ver_info}" >> $GITHUB_ENV
           echo "GIT_HASH=${git_hash}" >> $GITHUB_ENV
 
@@ -179,9 +179,9 @@ jobs:
       matrix:
         dist:
           - {
-              name: fedora-43,
+              name: fedora-45,
               os: fedora,
-              symbol: 43,
+              symbol: 45,
               arch: x86_64
             }
           - {
@@ -211,20 +211,20 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - name: Set env & Print flameshot version
+      - name: Set env & Print tildeshot version
         shell: bash
         run: |
           last_committed_tag=$(git tag -l --sort=-v:refname | head -1)
           git_revno=$(git rev-list $(git describe --tags --abbrev=0)..HEAD --count)
           git_hash=$(git rev-parse --short HEAD)
           ver_info=${last_committed_tag}+git${git_revno}.${git_hash}
-          echo "=======FLAMESHOT VERSION========"
+          echo "=======TILDESHOT VERSION========"
           echo ${last_committed_tag:1}
           echo "Details: ${ver_info}"
           echo "================================"
           # This will allow to build pre-preleases without git tag
           # echo "VERSION=${last_committed_tag:1}" >> $GITHUB_ENV
-          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*FLAMESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
+          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*TILDESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
           echo "VER_INFO=${ver_info}" >> $GITHUB_ENV
           echo "GIT_HASH=${git_hash}" >> $GITHUB_ENV
 
@@ -240,7 +240,7 @@ jobs:
         if: matrix.dist.os == 'fedora'
         run: |
           mkdir $GITHUB_WORKSPACE/rpm
-          cp $GITHUB_WORKSPACE/packaging/rpm/flameshot.spec $GITHUB_WORKSPACE/rpm
+          cp $GITHUB_WORKSPACE/packaging/rpm/tildeshot.spec $GITHUB_WORKSPACE/rpm
           bash $GITHUB_WORKSPACE/tools/packpack
         env:
           OS: ${{ matrix.dist.os }}
@@ -251,7 +251,7 @@ jobs:
         if: matrix.dist.os == 'opensuse-leap'
         run: |
           mkdir $GITHUB_WORKSPACE/rpm
-          cp $GITHUB_WORKSPACE/packaging/rpm/flameshot.spec $GITHUB_WORKSPACE/rpm
+          cp $GITHUB_WORKSPACE/packaging/rpm/tildeshot.spec $GITHUB_WORKSPACE/rpm
           bash $GITHUB_WORKSPACE/tools/packpack
         env:
           OS: ${{ matrix.dist.os }}
@@ -309,7 +309,7 @@ jobs:
               os: ubuntu,
               symbol: noble,
               arch: amd64,
-              image_repo: quay.io/flameshot-org/ci-building
+              image_repo: ghcr.io/poweruserz/ci-building
             }
     container:
       image: ${{ matrix.config.image_repo }}:${{ matrix.config.os }}-${{ matrix.config.symbol }}
@@ -340,20 +340,20 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - name: Set env & Print flameshot version
+      - name: Set env & Print tildeshot version
         shell: bash
         run: |
           last_committed_tag=$(git tag -l --sort=-v:refname | head -1)
           git_revno=$(git rev-list $(git describe --tags --abbrev=0)..HEAD --count)
           git_hash=$(git rev-parse --short HEAD)
           ver_info=${last_committed_tag}+git${git_revno}.${git_hash}
-          echo "=======FLAMESHOT VERSION========"
+          echo "=======TILDESHOT VERSION========"
           echo ${last_committed_tag:1}
           echo "Details: ${ver_info}"
           echo "================================"
           # This will allow to build pre-preleases without git tag
           # echo "VERSION=${last_committed_tag:1}" >> $GITHUB_ENV
-          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*FLAMESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
+          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*TILDESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
           echo "VER_INFO=${ver_info}" >> $GITHUB_ENV
           echo "GIT_HASH=${git_hash}" >> $GITHUB_ENV
 
@@ -395,20 +395,20 @@ jobs:
           export QMAKE=/usr/lib/qt6/bin/qmake
           ${PWD}/linuxdeploy-x86_64.AppImage --appdir ${APPIMAGE_DST_PATH} --plugin qt --output appimage
 
-          mv $GITHUB_WORKSPACE/Flameshot-${VERSION}-x86_64.AppImage $GITHUB_WORKSPACE/Flameshot-${VERSION}.x86_64.AppImage
+          mv $GITHUB_WORKSPACE/Tildeshot-${VERSION}-x86_64.AppImage $GITHUB_WORKSPACE/Tildeshot-${VERSION}.x86_64.AppImage
 
       - name: SHA256Sum of appimage package
         run: |
           cd "$GITHUB_WORKSPACE/" || { >&2 echo "Cannot cd to '$GITHUB_WORKSPACE/'!"; exit 11 ; }
-          sha256sum Flameshot-${VERSION}.x86_64.AppImage | tee Flameshot-${VERSION}.x86_64.AppImage.sha256sum
+          sha256sum Tildeshot-${VERSION}.x86_64.AppImage | tee Tildeshot-${VERSION}.x86_64.AppImage.sha256sum
 
       - name: Artifact Upload
         uses: actions/upload-artifact@v7
         with:
           name: ${{ env.PRODUCT }}-${{ env.VER_INFO }}-artifact-appimage-x86_64
           path: |
-            ${{ github.workspace }}/Flameshot-*.x86_64.AppImage
-            ${{ github.workspace }}/Flameshot-*.x86_64.AppImage.sha256sum
+            ${{ github.workspace }}/Tildeshot-*.x86_64.AppImage
+            ${{ github.workspace }}/Tildeshot-*.x86_64.AppImage.sha256sum
           overwrite: true
 
   flatpak-pack:
@@ -434,29 +434,29 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - name: Set env & Print flameshot version
+      - name: Set env & Print tildeshot version
         shell: bash
         run: |
           last_committed_tag=$(git tag -l --sort=-v:refname | head -1)
           git_revno=$(git rev-list $(git describe --tags --abbrev=0)..HEAD --count)
           git_hash=$(git rev-parse --short HEAD)
           ver_info=${last_committed_tag}+git${git_revno}.${git_hash}
-          echo "=======FLAMESHOT VERSION========"
+          echo "=======TILDESHOT VERSION========"
           echo ${last_committed_tag:1}
           echo "Details: ${ver_info}"
           echo "================================"
           # This will allow to build pre-preleases without git tag
           # echo "VERSION=${last_committed_tag:1}" >> $GITHUB_ENV
-          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*FLAMESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
+          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*TILDESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
           echo "VER_INFO=${ver_info}" >> $GITHUB_ENV
           echo "GIT_HASH=${git_hash}" >> $GITHUB_ENV
 
       - name: Update flatpak manifest with commit SHA
         run: |
           git_hash=$(git rev-parse HEAD)
-          sed -i "s/branch: master/commit: ${git_hash}/" packaging/flatpak/org.flameshot.Flameshot.yml
+          sed -i "s/branch: master/commit: ${git_hash}/" packaging/flatpak/org.tildeshot.Tildeshot.yml
           echo "=======FLATPAK MANIFEST========"
-          cat packaging/flatpak/org.flameshot.Flameshot.yml
+          cat packaging/flatpak/org.tildeshot.Tildeshot.yml
           echo "==============================="
 
       - name: Setup flatpak
@@ -469,26 +469,26 @@ jobs:
           flatpak install -y --noninteractive flathub org.kde.Sdk//6.9 org.kde.Platform//6.9
       - name: Packaging flatpak
         run: |
-          BUNDLE="org.flameshot.Flameshot_${VERSION}_x86_64.flatpak"
-          MANIFEST_PATH=$GITHUB_WORKSPACE/packaging/flatpak/org.flameshot.Flameshot.yml
+          BUNDLE="org.tildeshot.Tildeshot_${VERSION}_x86_64.flatpak"
+          MANIFEST_PATH=$GITHUB_WORKSPACE/packaging/flatpak/org.tildeshot.Tildeshot.yml
           RUNTIME_REPO="https://flathub.org/repo/flathub.flatpakrepo"
-          APP_ID="org.flameshot.Flameshot"
+          APP_ID="org.tildeshot.Tildeshot"
           BRANCH="master"
 
           flatpak-builder --user --disable-rofiles-fuse --repo=repo --force-clean flatpak_app ${MANIFEST_PATH} --install-deps-from=flathub
           flatpak build-bundle repo ${BUNDLE} --runtime-repo=${RUNTIME_REPO} ${APP_ID} ${BRANCH}
-          mv $GITHUB_WORKSPACE/org.flameshot.Flameshot_${VERSION}_x86_64.flatpak $GITHUB_WORKSPACE/org.flameshot.Flameshot-${VERSION}.x86_64.flatpak
+          mv $GITHUB_WORKSPACE/org.tildeshot.Tildeshot_${VERSION}_x86_64.flatpak $GITHUB_WORKSPACE/org.tildeshot.Tildeshot-${VERSION}.x86_64.flatpak
       - name: SHA256Sum of flatpak package
         run: |
           cd "$GITHUB_WORKSPACE/" || { >&2 echo "Cannot cd to '$GITHUB_WORKSPACE/'!"; exit 11 ; }
-          sha256sum org.flameshot.Flameshot-${VERSION}.x86_64.flatpak | tee org.flameshot.Flameshot-${VERSION}.x86_64.flatpak.sha256sum
+          sha256sum org.tildeshot.Tildeshot-${VERSION}.x86_64.flatpak | tee org.tildeshot.Tildeshot-${VERSION}.x86_64.flatpak.sha256sum
       - name: Artifact Upload
         uses: actions/upload-artifact@v7
         with:
           name: ${{ env.PRODUCT }}-${{ env.VER_INFO }}-artifact-flatpak-x86_64
           path: |
-            ${{ github.workspace }}/org.flameshot.Flameshot-*.x86_64.flatpak
-            ${{ github.workspace }}/org.flameshot.Flameshot-*.x86_64.flatpak.sha256sum
+            ${{ github.workspace }}/org.tildeshot.Tildeshot-*.x86_64.flatpak
+            ${{ github.workspace }}/org.tildeshot.Tildeshot-*.x86_64.flatpak.sha256sum
           overwrite: true
 
   snap-pack:
@@ -515,20 +515,20 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - name: Set env & Print flameshot version
+      - name: Set env & Print tildeshot version
         shell: bash
         run: |
           last_committed_tag=$(git tag -l --sort=-v:refname | head -1)
           git_revno=$(git rev-list $(git describe --tags --abbrev=0)..HEAD --count)
           git_hash=$(git rev-parse --short HEAD)
           ver_info=${last_committed_tag}+git${git_revno}.${git_hash}
-          echo "=======FLAMESHOT VERSION========"
+          echo "=======TILDESHOT VERSION========"
           echo ${last_committed_tag:1}
           echo "Details: ${ver_info}"
           echo "================================"
           # This will allow to build pre-preleases without git tag
           # echo "VERSION=${last_committed_tag:1}" >> $GITHUB_ENV
-          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*FLAMESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
+          echo "VERSION=$(cat CMakeLists.txt |grep 'set.*(.*TILDESHOT_VERSION' | sed 's/[^0-9.]*//' |sed 's/)//g')" >> $GITHUB_ENV
           echo "VER_INFO=${ver_info}" >> $GITHUB_ENV
           echo "GIT_HASH=${git_hash}" >> $GITHUB_ENV
 

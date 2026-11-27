@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> 秒</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>新しいスクリーンショットを撮る</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>領域 :</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>キャプチャ ランチャー</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>キャプチャモード</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>遅延 :</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>モニター :</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -270,13 +270,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot のフォーカスが外れました。どこかをクリックするまでキーボード ショートカットは動作しません。</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot のフォーカスが外れました。どこかをクリックするまでキーボード ショートカットは動作しません。</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>設定エラーが解決されました。適用するには `flameshot gui` を再度実行してください。</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>設定エラーが解決されました。適用するには `tildeshot gui` を再度実行してください。</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -580,10 +580,10 @@ Enter を押すと画面をキャプチャー。
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>一部のキーボード ショートカットに競合があります。
-これは Flameshot の起動を妨げるものではありません。
+これは Tildeshot の起動を妨げるものではありません。
 設定ファイルで手動で解決してください。</translation>
     </message>
     <message>
@@ -785,42 +785,42 @@ Please solve them manually in the configuration file.</source>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>アクティブなモーダル ウィジェットを閉じられません</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>URL をクリップボードにコピーしました。</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="obsolete">新しいバージョン%1が公開されました</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>最新バージョンです</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>最新バージョンの情報を取得できませんでした。</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>DBus 経由で接続できません</translation>
     </message>
@@ -892,8 +892,8 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">スタートアップ時に起動する</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshot を起動する</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Tildeshot を起動する</translation>
     </message>
 </context>
 <context>
@@ -997,8 +997,8 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Flameshot GUI の複数インスタンスを同時に許可</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Tildeshot GUI の複数インスタンスを同時に許可</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1009,8 +1009,8 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">システム起動時に起動する</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshotを起動する</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Tildeshotを起動する</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1092,12 +1092,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>これにより、例えば Flameshot 自体のスクリーンショットを撮ることができます</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>これにより、例えば Tildeshot 自体のスクリーンショットを撮ることができます</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Launch Tildeshot daemon when computer is booted</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1139,8 +1139,8 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>コンピューター起動時に Flameshot デーモン (バックグラウンドプロセス) を起動</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>コンピューター起動時に Tildeshot デーモン (バックグラウンドプロセス) を起動</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1600,49 +1600,49 @@ Please solve them manually in the configuration file.</source>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
-        <translation>Flameshot について</translation>
+        <translation>Tildeshot について</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>アイコン</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>バージョン</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>OS 情報</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>情報をコピー</translation>
     </message>
@@ -2166,12 +2166,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>書き込みできません</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>要求された画面が画面数を超えています</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>全画面スクリーンショットを画面にピン留めしました</translation>
     </message>
@@ -2214,8 +2214,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>デフォルトでは Flameshot をバックグラウンドで実行し、設定用のトレイアイコンを追加します。</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>デフォルトでは Tildeshot をバックグラウンドで実行し、設定用のトレイアイコンを追加します。</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="83"/>
@@ -2529,8 +2529,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>変更を適用するには Flameshot を再起動する必要があります。</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>変更を適用するには Tildeshot を再起動する必要があります。</translation>
     </message>
 </context>
 <context>
@@ -2652,13 +2652,13 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Windows は「Print Screen」キーが押されると、強制的にスクリーンショット ツールを開くようです。Flameshot が「Print Screen」キーを使用できるように、これを無効にしますか？</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Windows は「Print Screen」キーが押されると、強制的にスクリーンショット ツールを開くようです。Tildeshot が「Print Screen」キーを使用できるように、これを無効にしますか？</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>変更を適用するには Flameshot を再起動する必要があります。</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>変更を適用するには Tildeshot を再起動する必要があります。</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2674,19 +2674,19 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
-        <translation>Flameshot を MS-SCREENCLIP アプリケーションとして登録 (管理者権限が必要)</translation>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Tildeshot を MS-SCREENCLIP アプリケーションとして登録 (管理者権限が必要)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>登録後、Windows の設定で Flameshot をデフォルトのスクリーンショット アプリケーションとして選択できます。</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>登録後、Windows の設定で Tildeshot をデフォルトのスクリーンショット アプリケーションとして選択できます。</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Flameshot を管理者として 1回だけ 起動し、再試行してください！</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Tildeshot を管理者として 1回だけ 起動し、再試行してください！</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -2876,8 +2876,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Flameshot 情報</translation>
+        <source>Tildeshot Info</source>
+        <translation>Tildeshot 情報</translation>
     </message>
 </context>
 <context>
@@ -2951,7 +2951,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="143"/>
         <source>&amp;About</source>
-        <translation>Flameshot について(&amp;A)</translation>
+        <translation>Tildeshot について(&amp;A)</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="150"/>
@@ -3048,8 +3048,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>新しい Flameshot バージョン %1 が利用可能です</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>新しい Tildeshot バージョン %1 が利用可能です</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3165,8 +3165,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>これらの変更を適用するには Flameshot を再起動する必要があります！</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>これらの変更を適用するには Tildeshot を再起動する必要があります！</translation>
     </message>
 </context>
 <context>

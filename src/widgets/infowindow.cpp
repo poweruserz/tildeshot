@@ -3,8 +3,8 @@
 
 #include "infowindow.h"
 #include "./ui_infowindow.h"
-#include "core/flameshotdaemon.h"
 #include "core/qguiappcurrentscreen.h"
+#include "core/tildeshotdaemon.h"
 #include "utils/globalvalues.h"
 
 #include <QKeyEvent>
@@ -55,6 +55,6 @@ QString generateKernelString()
 
 void InfoWindow::copyInfo()
 {
-    FlameshotDaemon::copyToClipboard(GlobalValues::versionInfo() + "\n" +
+    TildeshotDaemon::copyToClipboard(GlobalValues::versionInfo() + "\n" +
                                      generateKernelString());
 }

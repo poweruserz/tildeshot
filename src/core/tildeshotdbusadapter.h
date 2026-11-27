@@ -5,14 +5,14 @@
 
 #include <QtDBus/QDBusAbstractAdaptor>
 
-class FlameshotDBusAdapter : public QDBusAbstractAdaptor
+class TildeshotDBusAdapter : public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.flameshot.Flameshot")
+    Q_CLASSINFO("D-Bus Interface", "org.tildeshot.Tildeshot")
 
 public:
-    explicit FlameshotDBusAdapter(QObject* parent = nullptr);
-    virtual ~FlameshotDBusAdapter();
+    explicit TildeshotDBusAdapter(QObject* parent = nullptr);
+    virtual ~TildeshotDBusAdapter();
 
 public slots:
     Q_NOREPLY void captureScreen();

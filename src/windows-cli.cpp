@@ -37,15 +37,15 @@ static void appendQuotedArg(std::wstring& cmdline, const std::wstring& arg)
     cmdline.push_back(L'"');
 }
 
-// Launch flameshot.exe (located next to this wrapper) with argv[1..],
-// forwarding each argument as literal data. flameshot.exe is passed via
+// Launch tildeshot.exe (located next to this wrapper) with argv[1..],
+// forwarding each argument as literal data. tildeshot.exe is passed via
 // lpApplicationName so no command interpreter is involved and shell
 // metacharacters have no effect. When wait is true, the child's stdout is
 // captured and relayed. Returns child's process exit code. If wait==false,
 // returns 0 (child running).
-int CallFlameshot(int argc, wchar_t* argv[], bool wait)
+int CallTildeshot(int argc, wchar_t* argv[], bool wait)
 {
-    // Full path to flameshot.exe, in the same directory as this executable.
+    // Full path to tildeshot.exe, in the same directory as this executable.
     wchar_t path[MAX_PATH];
     DWORD len = GetModuleFileNameW(NULL, path, MAX_PATH);
     if (len == 0 || len == MAX_PATH) {
@@ -57,7 +57,7 @@ int CallFlameshot(int argc, wchar_t* argv[], bool wait)
     std::wstring directory = (lastBackslash != std::wstring::npos)
                                ? pathstring.substr(0, lastBackslash + 1)
                                : L"";
-    std::wstring exePath = directory + L"flameshot.exe";
+    std::wstring exePath = directory + L"tildeshot.exe";
 
     // Build the command line with each argument individually quoted.
     std::wstring cmdline;
@@ -145,18 +145,18 @@ int CallFlameshot(int argc, wchar_t* argv[], bool wait)
     return exitCode;
 }
 
-// Console 'wrapper' for flameshot on windows
+// Console 'wrapper' for tildeshot on windows
 int wmain(int argc, wchar_t* argv[])
 {
     // if no args, do not wait for stdout => return 0.
-    // If args exist, wait and return flameshot's exit code.
+    // If args exist, wait and return tildeshot's exit code.
     if (argc == 1) {
-        std::cout << "Starting flameshot in daemon mode" << std::endl;
-        int code = CallFlameshot(argc, argv, false);
+        std::cout << "Starting tildeshot in daemon mode" << std::endl;
+        int code = CallTildeshot(argc, argv, false);
         std::cout.flush();
         return code;
     } else {
-        int code = CallFlameshot(argc, argv, true);
+        int code = CallTildeshot(argc, argv, true);
         std::cout.flush();
         return code;
     }

@@ -4,8 +4,8 @@
 #include "capturelauncher.h"
 #include "./ui_capturelauncher.h"
 #include "config/cacheutils.h"
-#include "core/flameshot.h"
 #include "core/qguiappcurrentscreen.h"
+#include "core/tildeshot.h"
 #include "utils/globalvalues.h"
 #include "utils/screenshotsaver.h"
 
@@ -119,9 +119,9 @@ CaptureLauncher::CaptureLauncher(QDialog* parent)
 
     loadLastRegion();
     // Keep the region inputs in sync with the last accepted selection, also
-    // for captures started outside the launcher (tray icon, `flameshot gui`)
-    connect(Flameshot::instance(),
-            &Flameshot::captureTaken,
+    // for captures started outside the launcher (tray icon, `tildeshot gui`)
+    connect(Tildeshot::instance(),
+            &Tildeshot::captureTaken,
             this,
             &CaptureLauncher::loadLastRegion);
 
@@ -178,7 +178,7 @@ void CaptureLauncher::startCapture()
 #endif
 
     connectCaptureSlots();
-    Flameshot::instance()->requestCapture(req);
+    Tildeshot::instance()->requestCapture(req);
 }
 
 void CaptureLauncher::loadLastRegion()
@@ -192,12 +192,12 @@ void CaptureLauncher::loadLastRegion()
 
 void CaptureLauncher::connectCaptureSlots() const
 {
-    connect(Flameshot::instance(),
-            &Flameshot::captureTaken,
+    connect(Tildeshot::instance(),
+            &Tildeshot::captureTaken,
             this,
             &CaptureLauncher::onCaptureTaken);
-    connect(Flameshot::instance(),
-            &Flameshot::captureFailed,
+    connect(Tildeshot::instance(),
+            &Tildeshot::captureFailed,
             this,
             &CaptureLauncher::onCaptureFailed);
 }
@@ -209,12 +209,12 @@ void CaptureLauncher::disconnectCaptureSlots() const
     // (random number, usually from 1 up to 20).
     // So now it enables signal on "Capture new screenshot" button and disables
     // on first success of fail.
-    disconnect(Flameshot::instance(),
-               &Flameshot::captureTaken,
+    disconnect(Tildeshot::instance(),
+               &Tildeshot::captureTaken,
                this,
                &CaptureLauncher::onCaptureTaken);
-    disconnect(Flameshot::instance(),
-               &Flameshot::captureFailed,
+    disconnect(Tildeshot::instance(),
+               &Tildeshot::captureFailed,
                this,
                &CaptureLauncher::onCaptureFailed);
 }

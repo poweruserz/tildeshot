@@ -141,50 +141,50 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="100"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="53"/>
         <source> seconds</source>
         <translation> វិនាទី</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="165"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>Take new screenshot</source>
         <translation>ថតរូបអេក្រង់ថ្មី</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="66"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Area:</source>
         <translation>តំបន់៖</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="177"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="177"/>
         <source>Capture Launcher</source>
         <translation>កម្មវិធីចាប់ផ្តើមថតអេក្រង់</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="34"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="178"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="178"/>
         <source>TextLabel</source>
         <translation>ស្លាកអក្សរ</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="51"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Mode</source>
         <translation>របៀបថតអេក្រង់</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="80"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="182"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="182"/>
         <source>Delay:</source>
         <translation>ការពន្យារ៖</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="93"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -259,13 +259,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="727"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot បាត់ការផ្តោតអារម្មណ៍។ គ្រាប់ចុចផ្លូវកាត់នឹងមិនដំណើរការទេ រហូតដល់អ្នកចុចកន្លែងណាមួយ។</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot បាត់ការផ្តោតអារម្មណ៍។ គ្រាប់ចុចផ្លូវកាត់នឹងមិនដំណើរការទេ រហូតដល់អ្នកចុចកន្លែងណាមួយ។</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="733"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>កំហុសកំណត់រចនាសម្ព័ន្ធត្រូវបានដោះស្រាយ។ បើក `flameshot gui` ម្តងទៀតដើម្បីអនុវត្តវា។</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>កំហុសកំណត់រចនាសម្ព័ន្ធត្រូវបានដោះស្រាយ។ បើក `tildeshot gui` ម្តងទៀតដើម្បីអនុវត្តវា។</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -569,10 +569,10 @@ Premeu Espai per obrir el calaix lateral.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="90"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>គ្រាប់ចុចខ្លះមានការប៉ះទង្គិចគ្នា។
-វានឹងមិនរារាំង Flameshot ពីការចាប់ផ្តើមទេ។
+វានឹងមិនរារាំង Tildeshot ពីការចាប់ផ្តើមទេ។
 សូមដោះស្រាយដោយដៃក្នុងឯកសារកំណត់រចនាសម្ព័ន្ធ។</translation>
     </message>
     <message>
@@ -778,42 +778,42 @@ Please solve them manually in the configuration file.</source>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="119"/>
+        <location filename="../../src/core/tildeshot.cpp" line="119"/>
         <source>Error</source>
         <translation>កំហុស</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="119"/>
+        <location filename="../../src/core/tildeshot.cpp" line="119"/>
         <source>Unable to close active modal widgets</source>
         <translation>មិនអាចបិទផ្ទាំង modal សកម្មបានទេ</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="431"/>
+        <location filename="../../src/core/tildeshot.cpp" line="431"/>
         <source>URL copied to clipboard.</source>
         <translation>បានចម្លង URL ទៅក្ដារម្ជុលខ្ទាស់។</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="407"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="407"/>
         <source>New version %1 is available</source>
         <translation>មានកំណែថ្មី %1</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="413"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="413"/>
         <source>You have the latest version</source>
         <translation>អ្នកមានកំណែចុងក្រោយបំផុតហើយ</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="422"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="422"/>
         <source>Failed to get information about the latest version.</source>
         <translation>បរាជ័យក្នុងការទទួលព័ត៌មានអំពីកំណែចុងក្រោយបំផុត។</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Unable to connect via DBus</source>
         <translation>មិនអាចភ្ជាប់តាម DBus បានទេ</translation>
     </message>
@@ -986,12 +986,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="426"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>អនុញ្ញាតឱ្យដំណើរការ Flameshot GUI ច្រើនក្នុងពេលតែមួយ</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>អនុញ្ញាតឱ្យដំណើរការ Tildeshot GUI ច្រើនក្នុងពេលតែមួយ</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
-        <translation type="vanished">This allows you to take screenshots of flameshot itself for example.</translation>
+        <source>This allows you to take screenshots of tildeshot itself for example.</source>
+        <translation type="vanished">This allows you to take screenshots of tildeshot itself for example.</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1002,8 +1002,8 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">Llança a l&apos;inici</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Inicia el Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Inicia el Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="463"/>
@@ -1095,12 +1095,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="427"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>វាអនុញ្ញាតឱ្យអ្នកថតរូបអេក្រង់របស់ Flameshot ខ្លួនឯងជាឧទាហរណ៍</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>វាអនុញ្ញាតឱ្យអ្នកថតរូបអេក្រង់របស់ Tildeshot ខ្លួនឯងជាឧទាហរណ៍</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Launch Tildeshot daemon when computer is booted</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="466"/>
@@ -1142,8 +1142,8 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="452"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>ចាប់ផ្តើមដេម៉ុន Flameshot (ដំណើរការផ្ទៃខាងក្រោយ) នៅពេលកុំព្យូទ័រចាប់ផ្តើម</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>ចាប់ផ្តើមដេម៉ុន Tildeshot (ដំណើរការផ្ទៃខាងក្រោយ) នៅពេលកុំព្យូទ័រចាប់ផ្តើម</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="477"/>
@@ -1583,49 +1583,49 @@ Please solve them manually in the configuration file.</source>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>អំពី</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>រូបតំណាង</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>អាជ្ញាបណ្ណ</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>កំណែ</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>ព័ត៌មាន OS</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>ចម្លងព័ត៌មាន</translation>
     </message>
@@ -2130,12 +2130,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>មិនអាចសរសេរទៅក្នុង</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="156"/>
+        <location filename="../../src/core/tildeshot.cpp" line="156"/>
         <source>Requested screen exceeds screen count</source>
         <translation>អេក្រង់ដែលបានស្នើលើសពីចំនួនអេក្រង់</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="408"/>
+        <location filename="../../src/core/tildeshot.cpp" line="408"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>រូបថតអេក្រង់ពេញបានខ្ទាស់លើអេក្រង់</translation>
     </message>
@@ -2178,8 +2178,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>តាមលំនាំដើម ដំណើរការ Flameshot នៅផ្ទៃខាងក្រោយ និងបន្ថែមរូបតំណាងថាសសម្រាប់ការកំណត់រចនាសម្ព័ន្ធ។</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>តាមលំនាំដើម ដំណើរការ Tildeshot នៅផ្ទៃខាងក្រោយ និងបន្ថែមរូបតំណាងថាសសម្រាប់ការកំណត់រចនាសម្ព័ន្ធ។</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="71"/>
@@ -2320,8 +2320,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/utils/screengrabber.cpp" line="171"/>
-        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in flameshot.ini to activate the grim-based general wayland screenshot adapter</source>
-        <translation>ប្រសិនបើការកំណត់ useGrimAdapter មិនត្រូវបានបើក ពិធីការ dbus នឹងត្រូវប្រើ។ គួរកត់សម្គាល់ថាការប្រើពិធីការ dbus នៅក្រោម Wayland មិនត្រូវបានណែនាំទេ។ គួរបើកការកំណត់ useGrimAdapter ក្នុង flameshot.ini ដើម្បីបើកអាដាប់ទ័រថតអេក្រង់ Wayland ទូទៅដែលផ្អែកលើ grim</translation>
+        <source>If the useGrimAdapter setting is not enabled, the dbus protocol will be used. It should be noted that using the dbus protocol under wayland is not recommended. It is recommended to enable the useGrimAdapter setting in tildeshot.ini to activate the grim-based general wayland screenshot adapter</source>
+        <translation>ប្រសិនបើការកំណត់ useGrimAdapter មិនត្រូវបានបើក ពិធីការ dbus នឹងត្រូវប្រើ។ គួរកត់សម្គាល់ថាការប្រើពិធីការ dbus នៅក្រោម Wayland មិនត្រូវបានណែនាំទេ។ គួរបើកការកំណត់ useGrimAdapter ក្នុង tildeshot.ini ដើម្បីបើកអាដាប់ទ័រថតអេក្រង់ Wayland ទូទៅដែលផ្អែកលើ grim</translation>
     </message>
     <message>
         <location filename="../../src/utils/screengrabber.cpp" line="182"/>
@@ -2415,8 +2415,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="48"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="53"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>ត្រូវចាប់ផ្តើម Flameshot ឡើងវិញដើម្បីឱ្យការផ្លាស់ប្តូរមានប្រសិទ្ធភាព។</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>ត្រូវចាប់ផ្តើម Tildeshot ឡើងវិញដើម្បីឱ្យការផ្លាស់ប្តូរមានប្រសិទ្ធភាព។</translation>
     </message>
 </context>
 <context>
@@ -2744,8 +2744,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>SystemNotification</name>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="42"/>
-        <source>Flameshot Info</source>
-        <translation>ព័ត៌មាន Flameshot</translation>
+        <source>Tildeshot Info</source>
+        <translation>ព័ត៌មាន Tildeshot</translation>
     </message>
 </context>
 <context>
@@ -2901,8 +2901,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="70"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>មានកំណែ Flameshot ថ្មី %1</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>មានកំណែ Tildeshot ថ្មី %1</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="123"/>

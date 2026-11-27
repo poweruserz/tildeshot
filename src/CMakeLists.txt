@@ -29,70 +29,70 @@ set(CMAKE_AUTOUIC ON)
 
 # set application icon
 if (APPLE)
-    set(FLAMESHOT_ICONSET ${CMAKE_BINARY_DIR}/flameshot.iconset)
-    set(FLAMESHOT_ICNS ${CMAKE_BINARY_DIR}/flameshot.icns)
+    set(TILDESHOT_ICONSET ${CMAKE_BINARY_DIR}/tildeshot.iconset)
+    set(TILDESHOT_ICNS ${CMAKE_BINARY_DIR}/tildeshot.icns)
 
     # generate iconset
     execute_process(
-            COMMAND bash "-c" "mkdir -p \"${FLAMESHOT_ICONSET}\""
+            COMMAND bash "-c" "mkdir -p \"${TILDESHOT_ICONSET}\""
     )
 
     execute_process(
-            COMMAND bash "-c" "sips -z 16 16     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_16x16.png"
-            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_16x16@2x.png"
-            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_32x32.png"
-            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_32x32@2x.png"
-            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_64x64x.png"
-            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_64x64@2.png"
-            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_128x128.png"
-            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_128x128@2x.png"
-            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_256x256.png"
-            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_256x256@2x.png"
-            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_512x512.png"
-            COMMAND bash "-c" "sips -z 1024 1024 \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.flameshot.Flameshot-1024.png --out \"${FLAMESHOT_ICONSET}\"/icon_512x512@2x.png"
+            COMMAND bash "-c" "sips -z 16 16     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_16x16.png"
+            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_16x16@2x.png"
+            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_32x32.png"
+            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_32x32@2x.png"
+            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_64x64x.png"
+            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_64x64@2.png"
+            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_128x128.png"
+            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_128x128@2x.png"
+            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_256x256.png"
+            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_256x256@2x.png"
+            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_512x512.png"
+            COMMAND bash "-c" "sips -z 1024 1024 \"${CMAKE_SOURCE_DIR}\"/data/img/app/org.tildeshot.Tildeshot-1024.png --out \"${TILDESHOT_ICONSET}\"/icon_512x512@2x.png"
 
-            COMMAND bash "-c" "iconutil -o \"${FLAMESHOT_ICNS}\" -c icns \"${FLAMESHOT_ICONSET}\""
+            COMMAND bash "-c" "iconutil -o \"${TILDESHOT_ICNS}\" -c icns \"${TILDESHOT_ICONSET}\""
     )
 
     execute_process(
-        COMMAND bash "-c" "rm -R \"${FLAMESHOT_ICONSET}\""
+        COMMAND bash "-c" "rm -R \"${TILDESHOT_ICONSET}\""
     )
 
     execute_process(
         # copy icon from cache generated on the localhost if generation on CI failed
-        COMMAND bash "-c" "[[ -r '\"${FLAMESHOT_ICNS}\"' ]] || cp \"${CMAKE_SOURCE_DIR}\"/packaging/macos/flameshot.icns \"${FLAMESHOT_ICNS}\""
+        COMMAND bash "-c" "[[ -r '\"${TILDESHOT_ICNS}\"' ]] || cp \"${CMAKE_SOURCE_DIR}\"/packaging/macos/tildeshot.icns \"${TILDESHOT_ICNS}\""
     )
 
     # Set application icon
-    set(MACOSX_BUNDLE_ICON_FILE flameshot.icns)
+    set(MACOSX_BUNDLE_ICON_FILE tildeshot.icns)
 
     # And this part tells CMake where to find and install the file itself
-    set(APP_ICON_MACOSX ${FLAMESHOT_ICNS})
+    set(APP_ICON_MACOSX ${TILDESHOT_ICNS})
     set_source_files_properties(${APP_ICON_MACOSX} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
-    add_executable(flameshot MACOSX_BUNDLE main.cpp ${APP_ICON_MACOSX})
+    add_executable(tildeshot MACOSX_BUNDLE main.cpp ${APP_ICON_MACOSX})
 else ()
-    add_executable(flameshot)
+    add_executable(tildeshot)
 endif ()
 
-add_executable(Flameshot::flameshot ALIAS flameshot)
+add_executable(Tildeshot::tildeshot ALIAS tildeshot)
 
-if(FLAMESHOT_ICON)
-  target_compile_definitions(flameshot PUBLIC FLAMESHOT_ICON="${FLAMESHOT_ICON}")
+if(TILDESHOT_ICON)
+  target_compile_definitions(tildeshot PUBLIC TILDESHOT_ICON="${TILDESHOT_ICON}")
 endif()
 
 if (WIN32)
-    add_executable(flameshot-cli)
+    add_executable(tildeshot-cli)
     target_sources(
-        flameshot-cli
+        tildeshot-cli
         PRIVATE
         windows-cli.cpp)
-    set_target_properties(flameshot-cli PROPERTIES OUTPUT_NAME "flameshot-cli")
-    target_link_options(flameshot-cli PRIVATE /SUBSYSTEM:CONSOLE)
-    set_property(TARGET flameshot PROPERTY WIN32_EXECUTABLE true)
+    set_target_properties(tildeshot-cli PROPERTIES OUTPUT_NAME "tildeshot-cli")
+    target_link_options(tildeshot-cli PRIVATE /SUBSYSTEM:CONSOLE)
+    set_property(TARGET tildeshot PROPERTY WIN32_EXECUTABLE true)
     # Getting error D8016 - /utf-8 automatically set by current cmake/msvc ?
     #if (MSVC)
-    #    target_compile_options(flameshot PRIVATE /source-charset:utf-8)
+    #    target_compile_options(tildeshot PRIVATE /source-charset:utf-8)
     #endif ()
 endif ()
 
@@ -114,7 +114,7 @@ add_subdirectory(widgets)
 add_subdirectory(tools)
 
 
-set(FLAMESHOT_TS_FILES
+set(TILDESHOT_TS_FILES
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_bg.ts
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_ca.ts
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_cs.ts
@@ -161,16 +161,16 @@ set(FLAMESHOT_TS_FILES
          )
 
 if (GENERATE_TS)
-  qt6_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${FLAMESHOT_TS_FILES})
+  qt6_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TILDESHOT_TS_FILES})
 else ()
-  qt6_add_translation(QM_FILES ${FLAMESHOT_TS_FILES})
+  qt6_add_translation(QM_FILES ${TILDESHOT_TS_FILES})
 endif ()
 
 target_sources(
-        flameshot
+        tildeshot
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/../data/graphics.qrc
-        ${CMAKE_CURRENT_SOURCE_DIR}/../data/flameshot.rc # windows binary icon resource file
+        ${CMAKE_CURRENT_SOURCE_DIR}/../data/tildeshot.rc # windows binary icon resource file
         ${QM_FILES}
         main.cpp)
 
@@ -182,13 +182,13 @@ if (APPLE)
 endif ()
 
 
-target_include_directories(flameshot PUBLIC
+target_include_directories(tildeshot PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/>  # src/
     $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/>
 )
 
 target_link_libraries(
-        flameshot
+        tildeshot
         project_warnings
         project_options
         Qt${QT_VERSION_MAJOR}::Svg
@@ -198,7 +198,7 @@ target_link_libraries(
 )
 if (UNIX)
 target_link_libraries(
-        flameshot
+        tildeshot
         Qt${QT_VERSION_MAJOR}::DBus
 )
 endif()
@@ -208,34 +208,34 @@ if (USE_KDSINGLEAPPLICATION)
   add_compile_definitions(USE_KDSINGLEAPPLICATION=1)
 
   if (USE_BUNDLED_KDSINGLEAPPLICATION)
-    target_include_directories(flameshot PRIVATE ${kdsingleapplication_SOURCE_DIR} ${kdsingleapplication_BINARY_DIR})
+    target_include_directories(tildeshot PRIVATE ${kdsingleapplication_SOURCE_DIR} ${kdsingleapplication_BINARY_DIR})
   endif()
 
   target_link_libraries(
-          flameshot
+          tildeshot
           KDAB::kdsingleapplication
   )
 endif()
 
 if (USE_WAYLAND_CLIPBOARD)
-  target_compile_definitions(flameshot PRIVATE USE_WAYLAND_CLIPBOARD=1)
-  target_link_libraries(flameshot KF6::GuiAddons)
+  target_compile_definitions(tildeshot PRIVATE USE_WAYLAND_CLIPBOARD=1)
+  target_link_libraries(tildeshot KF6::GuiAddons)
 endif()
 
 if (APPLE)
-    set_target_properties(flameshot PROPERTIES
+    set_target_properties(tildeshot PROPERTIES
         MACOSX_BUNDLE TRUE
-        MACOSX_BUNDLE_BUNDLE_NAME "Flameshot"
+        MACOSX_BUNDLE_BUNDLE_NAME "Tildeshot"
         MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
         MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION}
-        MACOSX_BUNDLE_IDENTIFIER "org.flameshot.Flameshot"
-        MACOSX_BUNDLE_GUI_IDENTIFIER "org.flameshot.Flameshot" 
+        MACOSX_BUNDLE_IDENTIFIER "org.tildeshot.Tildeshot"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "org.tildeshot.Tildeshot" 
     ) 
-    set_property(TARGET flameshot PROPERTY
+    set_property(TARGET tildeshot PROPERTY
         MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/packaging/macos/Info.plist.in
     )
     target_link_libraries(
-            flameshot
+            tildeshot
             qhotkey
     )
 endif ()
@@ -266,54 +266,54 @@ if (WIN32)
     endif ()
 
     target_link_libraries(
-            flameshot
+            tildeshot
             qhotkey
     )
 endif ()
 
 # Choose default color palette (small or large)
-if($ENV{FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
-    set(FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE true)
+if($ENV{TILDESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
+    set(TILDESHOT_PREDEFINED_COLOR_PALETTE_LARGE true)
 else()
-    set(FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE false)
+    set(TILDESHOT_PREDEFINED_COLOR_PALETTE_LARGE false)
 endif()
-message("Flameshot predefined color palette large: " ${FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
-target_compile_definitions(flameshot PRIVATE PREDEFINED_COLOR_PALETTE_LARGE=${FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
+message("Tildeshot predefined color palette large: " ${TILDESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
+target_compile_definitions(tildeshot PRIVATE PREDEFINED_COLOR_PALETTE_LARGE=${TILDESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
 
 
 find_package (Git)
 if( DEFINED ENV{GIT_HASH})
     message("Using provided git_commit_hash: $ENV{GIT_HASH}")
-    set(FLAMESHOT_GIT_HASH $ENV{GIT_HASH})
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_GIT_HASH="${FLAMESHOT_GIT_HASH}")
+    set(TILDESHOT_GIT_HASH $ENV{GIT_HASH})
+    target_compile_definitions(tildeshot PRIVATE TILDESHOT_GIT_HASH="${TILDESHOT_GIT_HASH}")
 elseif (GIT_FOUND)
     message("git found: ${GIT_EXECUTABLE} in version     ${GIT_VERSION_STRING}")
-    execute_process(COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD OUTPUT_VARIABLE FLAMESHOT_GIT_HASH)
-    string(REGEX REPLACE "\r*\n$" "" FLAMESHOT_GIT_HASH "${FLAMESHOT_GIT_HASH}")
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_GIT_HASH="${FLAMESHOT_GIT_HASH}")
-    message("FLAMESHOT_GIT_HASH: ${FLAMESHOT_GIT_HASH}")
+    execute_process(COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD OUTPUT_VARIABLE TILDESHOT_GIT_HASH)
+    string(REGEX REPLACE "\r*\n$" "" TILDESHOT_GIT_HASH "${TILDESHOT_GIT_HASH}")
+    target_compile_definitions(tildeshot PRIVATE TILDESHOT_GIT_HASH="${TILDESHOT_GIT_HASH}")
+    message("TILDESHOT_GIT_HASH: ${TILDESHOT_GIT_HASH}")
 else()
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_GIT_HASH="-")
+    target_compile_definitions(tildeshot PRIVATE TILDESHOT_GIT_HASH="-")
     message(WARNING "Compiling without git commit hash")
 endif ()
 
-target_compile_definitions(flameshot PRIVATE APP_PREFIX="${CMAKE_INSTALL_PREFIX}")
-target_compile_definitions(flameshot PRIVATE APP_VERSION="v${PROJECT_VERSION}")
-#target_compile_definitions(flameshot PRIVATE QAPPLICATION_CLASS=QApplication)
-target_compile_definitions(flameshot PRIVATE FLAMESHOT_APP_VERSION_URL="${GIT_API_URL}")
+target_compile_definitions(tildeshot PRIVATE APP_PREFIX="${CMAKE_INSTALL_PREFIX}")
+target_compile_definitions(tildeshot PRIVATE APP_VERSION="v${PROJECT_VERSION}")
+#target_compile_definitions(tildeshot PRIVATE QAPPLICATION_CLASS=QApplication)
+target_compile_definitions(tildeshot PRIVATE TILDESHOT_APP_VERSION_URL="${GIT_API_URL}")
 # Enable easier debugging of screenshot capture mode
-if (FLAMESHOT_DEBUG_CAPTURE)
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_DEBUG_CAPTURE)
+if (TILDESHOT_DEBUG_CAPTURE)
+    target_compile_definitions(tildeshot PRIVATE TILDESHOT_DEBUG_CAPTURE)
 endif ()
 
 if (USE_MONOCHROME_ICON)
-    target_compile_definitions(flameshot PRIVATE USE_MONOCHROME_ICON)
+    target_compile_definitions(tildeshot PRIVATE USE_MONOCHROME_ICON)
 endif ()
 
 foreach (FILE ${QM_FILES})
     get_filename_component(F_NAME ${FILE} NAME)
     add_custom_command(
-            TARGET flameshot
+            TARGET tildeshot
             POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/${F_NAME}
             ${CMAKE_CURRENT_BINARY_DIR}/translations/${F_NAME})
@@ -323,76 +323,76 @@ endforeach ()
 # Installation instructions
 
 include(GNUInstallDirs)
-set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/Flameshot)
+set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/Tildeshot)
 
 if(USE_LAUNCHER_ABSOLUTE_PATH)
-    set(LAUNCHER_EXECUTABLE "${CMAKE_INSTALL_FULL_BINDIR}/flameshot")
+    set(LAUNCHER_EXECUTABLE "${CMAKE_INSTALL_FULL_BINDIR}/tildeshot")
 else()
-    set(LAUNCHER_EXECUTABLE "flameshot")
+    set(LAUNCHER_EXECUTABLE "tildeshot")
 endif()
 
 # Install binary
-install(TARGETS flameshot
-        EXPORT flameshot-targets
+install(TARGETS tildeshot
+        EXPORT tildeshot-targets
         BUNDLE DESTINATION ${CMAKE_INSTALL_BINDIR}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 if (WIN32)
-    install(TARGETS flameshot-cli
+    install(TARGETS tildeshot-cli
             RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 endif ()
 
 if (UNIX)
     # Install desktop files, completion and dbus files
-    configure_file(${CMAKE_SOURCE_DIR}/data/desktopEntry/package/org.flameshot.Flameshot.desktop
-            ${CMAKE_CURRENT_BINARY_DIR}/share/applications/org.flameshot.Flameshot.desktop @ONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/desktopEntry/package/org.tildeshot.Tildeshot.desktop
+            ${CMAKE_CURRENT_BINARY_DIR}/share/applications/org.tildeshot.Tildeshot.desktop @ONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/appdata/org.flameshot.Flameshot.metainfo.xml
-            ${CMAKE_CURRENT_BINARY_DIR}/share/metainfo/org.flameshot.Flameshot.metainfo.xml COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/appdata/org.tildeshot.Tildeshot.metainfo.xml
+            ${CMAKE_CURRENT_BINARY_DIR}/share/metainfo/org.tildeshot.Tildeshot.metainfo.xml COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.bash
-            ${CMAKE_CURRENT_BINARY_DIR}/share/bash-completion/completions/flameshot COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/tildeshot.bash
+            ${CMAKE_CURRENT_BINARY_DIR}/share/bash-completion/completions/tildeshot COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.zsh
-            ${CMAKE_CURRENT_BINARY_DIR}/share/zsh/site-functions/_flameshot COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/tildeshot.zsh
+            ${CMAKE_CURRENT_BINARY_DIR}/share/zsh/site-functions/_tildeshot COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.fish
-            ${CMAKE_CURRENT_BINARY_DIR}/share/fish/vendor_completions.d/flameshot.fish COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/tildeshot.fish
+            ${CMAKE_CURRENT_BINARY_DIR}/share/fish/vendor_completions.d/tildeshot.fish COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.flameshot.Flameshot.xml
-            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/interfaces/org.flameshot.Flameshot.xml COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.tildeshot.Tildeshot.xml
+            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/interfaces/org.tildeshot.Tildeshot.xml COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.flameshot.Flameshot.service.in
-            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/services/org.flameshot.Flameshot.service)
+    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.tildeshot.Tildeshot.service.in
+            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/services/org.tildeshot.Tildeshot.service)
 
     # Install man pages
-    configure_file(${CMAKE_SOURCE_DIR}/data/man/man1/flameshot.1
-            ${CMAKE_CURRENT_BINARY_DIR}/share/man/man1/flameshot.1 COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/man/man1/tildeshot.1
+            ${CMAKE_CURRENT_BINARY_DIR}/share/man/man1/tildeshot.1 COPYONLY)
 
     # Install Icons
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/org.flameshot.Flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/org.tildeshot.Tildeshot.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/org.tildeshot.Tildeshot.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/org.flameshot.Flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/org.flameshot.Flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/org.tildeshot.Tildeshot.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/org.tildeshot.Tildeshot.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/org.flameshot.Flameshot.svg
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/org.flameshot.Flameshot.svg COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/org.tildeshot.Tildeshot.svg
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/org.tildeshot.Tildeshot.svg COPYONLY)
 
     # Install icon with both names
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/tildeshot.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/tildeshot.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/tildeshot.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/tildeshot.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/flameshot.svg
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/flameshot.svg COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/tildeshot.svg
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/tildeshot.svg COPYONLY)
 
     # Install assets
     install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/share/ DESTINATION ${CMAKE_INSTALL_DATAROOTDIR})
 
     # Install Translations
-    install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/flameshot/translations)
+    install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/tildeshot/translations)
 endif ()
 
 # windeployqt
@@ -417,12 +417,12 @@ if (WIN32)
         endif ()
 
         add_custom_command(
-                TARGET flameshot
+                TARGET tildeshot
                 POST_BUILD
                 COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/windeployqt_stuff
                 COMMAND
                 ${WINDEPLOYQT_EXE} ${BINARIES_TYPE} --no-translations --compiler-runtime --no-system-d3d-compiler
-                --no-quick-import --dir ${CMAKE_BINARY_DIR}/windeployqt_stuff $<TARGET_FILE:flameshot>
+                --no-quick-import --dir ${CMAKE_BINARY_DIR}/windeployqt_stuff $<TARGET_FILE:tildeshot>
                 # copy translations manually QM_FILES
                 COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/windeployqt_stuff/translations
                 COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_BINARY_DIR}/src/translations
@@ -459,11 +459,11 @@ if (APPLE)
     # Custom target to create DMG (signed or unsigned)
     add_custom_target(create_dmg
     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/../packaging/macos/create_dmg.sh 
-            "${CMAKE_CURRENT_BINARY_DIR}/Flameshot.app"
-            "${CMAKE_CURRENT_BINARY_DIR}/Flameshot-${PROJECT_VERSION}.dmg"
+            "${CMAKE_CURRENT_BINARY_DIR}/Tildeshot.app"
+            "${CMAKE_CURRENT_BINARY_DIR}/Tildeshot-${PROJECT_VERSION}.dmg"
             "${CODE_SIGN_IDENTITY}"
             "${DMG_SIGN_IDENTITY}"
-    DEPENDS flameshot
+    DEPENDS tildeshot
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
     COMMENT "Creating DMG"
     VERBATIM
@@ -472,15 +472,15 @@ if (APPLE)
 # Always sign the app bundle (either with identity or ad hoc)
     if(CODE_SIGN_IDENTITY AND NOT CODE_SIGN_IDENTITY STREQUAL "")
         # Identity-based signing (requires Developer ID)
-        add_custom_command(TARGET flameshot POST_BUILD
+        add_custom_command(TARGET tildeshot POST_BUILD
             COMMAND codesign --force --deep --sign "${CODE_SIGN_IDENTITY}" 
-                    --options runtime --timestamp "$<TARGET_BUNDLE_DIR:flameshot>"
+                    --options runtime --timestamp "$<TARGET_BUNDLE_DIR:tildeshot>"
             COMMENT "Code signing app bundle with ${CODE_SIGN_IDENTITY}"
         )
     else()
         # Ad hoc signing 
-        add_custom_command(TARGET flameshot POST_BUILD
-            COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:flameshot>"
+        add_custom_command(TARGET tildeshot POST_BUILD
+            COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:tildeshot>"
             COMMENT "Ad hoc code signing app bundle (no identity required)"
         )
     endif()
@@ -488,21 +488,21 @@ if (APPLE)
    find_program(MACDEPLOYQT_EXECUTABLE macdeployqt HINTS ${Qt6_DIR}/../../../bin)
     
    if(MACDEPLOYQT_EXECUTABLE)
-       add_custom_command(TARGET flameshot POST_BUILD
-           COMMAND ${MACDEPLOYQT_EXECUTABLE} "$<TARGET_BUNDLE_DIR:flameshot>" -verbose=2
+       add_custom_command(TARGET tildeshot POST_BUILD
+           COMMAND ${MACDEPLOYQT_EXECUTABLE} "$<TARGET_BUNDLE_DIR:tildeshot>" -verbose=2
            COMMENT "Deploying Qt libraries"
        )
        
        # Re-sign after macdeployqt (it modifies the bundle)
        if(CODE_SIGN_IDENTITY AND NOT CODE_SIGN_IDENTITY STREQUAL "")
-           add_custom_command(TARGET flameshot POST_BUILD
+           add_custom_command(TARGET tildeshot POST_BUILD
                COMMAND codesign --force --deep --sign "${CODE_SIGN_IDENTITY}" 
-                       --options runtime --timestamp "$<TARGET_BUNDLE_DIR:flameshot>"
+                       --options runtime --timestamp "$<TARGET_BUNDLE_DIR:tildeshot>"
                COMMENT "Re-signing app bundle after Qt deployment"
            )
        else()
-           add_custom_command(TARGET flameshot POST_BUILD
-               COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:flameshot>"
+           add_custom_command(TARGET tildeshot POST_BUILD
+               COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:tildeshot>"
                COMMENT "Re-signing app bundle after Qt deployment (ad hoc)"
            )
        endif()

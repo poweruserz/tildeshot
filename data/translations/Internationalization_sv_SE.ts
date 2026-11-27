@@ -150,26 +150,26 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="94"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="186"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="90"/>
         <source> seconds</source>
         <translation> sekunder</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="166"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="188"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="188"/>
         <source>Take new screenshot</source>
         <translation>Ta en ny skärmbild</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="47"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Område:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>Capture Launcher</source>
         <translation>Startfönster för skärmbilder</translation>
     </message>
@@ -179,25 +179,25 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="32"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Skärmbildsläge</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="64"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Fördröjning:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="71"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>Monitor:</source>
         <translation>Skärm:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="87"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_capturelauncher.h" line="185"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -270,13 +270,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="777"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot har tappat fokus. Klicka någonstans i fönstret för att kunna använda kortkommandona igen.</translation>
+        <source>Tildeshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>Tildeshot har tappat fokus. Klicka någonstans i fönstret för att kunna använda kortkommandona igen.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="783"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Konfigurationsfelet har åtgärdats. Kör `flameshot gui` igen för att använda den rättade konfigurationen.</translation>
+        <source>Configuration error resolved. Launch `tildeshot gui` again to apply it.</source>
+        <translation>Konfigurationsfelet har åtgärdats. Kör `tildeshot gui` igen för att använda den rättade konfigurationen.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -580,10 +580,10 @@ Tryck Space för att öppna sidopanelen.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="89"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent tildeshot from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Det finns konflikter mellan vissa kortkommandon.
-Flameshot kan ändå startas.
+Tildeshot kan ändå startas.
 Åtgärda konflikterna manuellt i konfigurationsfilen.</translation>
     </message>
     <message>
@@ -785,42 +785,42 @@ Flameshot kan ändå startas.
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>Tildeshot</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="122"/>
+        <location filename="../../src/core/tildeshot.cpp" line="122"/>
         <source>Unable to close active modal widgets</source>
         <translation>Det går inte att stänga de aktiva modala dialogrutorna</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="441"/>
+        <location filename="../../src/core/tildeshot.cpp" line="441"/>
         <source>URL copied to clipboard.</source>
         <translation>Länken har kopierats till urklipp.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>TildeshotDaemon</name>
     <message>
         <source>New version %1 is available</source>
         <translation type="vanished">Ny version %1 är tillgänglig</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="272"/>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="436"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="272"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="436"/>
         <source>You have the latest version</source>
         <translation>Du har den senaste versionen</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="445"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="445"/>
         <source>Failed to get information about the latest version.</source>
         <translation>Kunde inte hämta information om den senaste versionen.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="468"/>
+        <location filename="../../src/core/tildeshotdaemon.cpp" line="468"/>
         <source>Unable to connect via DBus</source>
         <translation>Det gick inte att ansluta via D-Bus</translation>
     </message>
@@ -892,8 +892,8 @@ Flameshot kan ändå startas.
         <translation type="vanished">Starta vid uppstart</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Starta Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Starta Tildeshot</translation>
     </message>
 </context>
 <context>
@@ -997,8 +997,8 @@ Flameshot kan ändå startas.
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="411"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Tillåt flera instanser av Flameshots grafiska gränssnitt samtidigt</translation>
+        <source>Allow multiple tildeshot GUI instances simultaneously</source>
+        <translation>Tillåt flera instanser av Tildeshots grafiska gränssnitt samtidigt</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -1009,8 +1009,8 @@ Flameshot kan ändå startas.
         <translation type="vanished">Starta vid uppstart</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Starta Flameshot</translation>
+        <source>Launch Tildeshot</source>
+        <translation type="vanished">Starta Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="448"/>
@@ -1092,12 +1092,12 @@ Flameshot kan ändå startas.
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="412"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>Då kan du till exempel ta en skärmbild av själva Flameshot</translation>
+        <source>This allows you to take screenshots of Tildeshot itself for example</source>
+        <translation>Då kan du till exempel ta en skärmbild av själva Tildeshot</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation type="vanished">Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch Tildeshot daemon when computer is booted</source>
+        <translation type="vanished">Launch Tildeshot daemon when computer is booted</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="451"/>
@@ -1125,7 +1125,7 @@ Flameshot kan ändå startas.
     <message>
         <location filename="../../src/config/generalconf.cpp" line="424"/>
         <source>Automatically unload from memory when it is not needed</source>
-        <translation>Frigör minnet automatiskt när Flameshot inte används</translation>
+        <translation>Frigör minnet automatiskt när Tildeshot inte används</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="425"/>
@@ -1139,8 +1139,8 @@ Flameshot kan ändå startas.
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="437"/>
-        <source>Launch Flameshot daemon (background process) when computer is booted</source>
-        <translation>Starta Flameshots bakgrundsprocess när datorn startas</translation>
+        <source>Launch Tildeshot daemon (background process) when computer is booted</source>
+        <translation>Starta Tildeshots bakgrundsprocess när datorn startas</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="462"/>
@@ -1600,49 +1600,49 @@ Flameshot kan ändå startas.
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="116"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="116"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="117"/>
         <source>Icon</source>
         <translation>Ikon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="118"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="119"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="120"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="121"/>
+        <source>Tildeshot v</source>
+        <translation>Tildeshot v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="122"/>
         <source>OS Info</source>
         <translation>Information om operativsystemet</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/tildeshot_autogen/include/ui_infowindow.h" line="123"/>
         <source>Copy Info</source>
         <translation>Kopiera informationen</translation>
     </message>
@@ -2204,16 +2204,16 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="334"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>Som standard körs Flameshot i bakgrunden. Inställningarna nås via en ikon i systemfältet.</translation>
+        <source>Per default runs Tildeshot in the background and adds a tray icon for configuration.</source>
+        <translation>Som standard körs Tildeshot i bakgrunden. Inställningarna nås via en ikon i systemfältet.</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="168"/>
+        <location filename="../../src/core/tildeshot.cpp" line="168"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Det finns ingen skärm med det angivna numret</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="418"/>
+        <location filename="../../src/core/tildeshot.cpp" line="418"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Skärmbilden av hela skärmen har fästs på skärmen</translation>
     </message>
@@ -2224,7 +2224,7 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="83"/>
         <source>Hello, I&apos;m here! Click icon in the tray to take a screenshot or click with a right button to see more options.</source>
-        <translation>Flameshot är igång! Klicka på ikonen i systemfältet för att ta en skärmbild, eller högerklicka för att se fler alternativ.</translation>
+        <translation>Tildeshot är igång! Klicka på ikonen i systemfältet för att ta en skärmbild, eller högerklicka för att se fler alternativ.</translation>
     </message>
     <message>
         <source>Toggle side panel</source>
@@ -2533,8 +2533,8 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="50"/>
         <location filename="../../src/config/setshortcutwidget.cpp" line="55"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Starta om Flameshot för att ändringarna ska få effekt.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Starta om Tildeshot för att ändringarna ska få effekt.</translation>
     </message>
 </context>
 <context>
@@ -2656,13 +2656,13 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="268"/>
-        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Flameshot can use the &apos;Print Screen&apos; key?</source>
-        <translation>Windows verkar öppna sitt eget skärmklippsverktyg när du trycker på Print Screen. Vill du stänga av den funktionen så att Flameshot kan använda tangenten?</translation>
+        <source>It seems, that Windows forces to open its screenshot tool when the &apos;Print Screen&apos; key is pressed. Would you like to disable this so that Tildeshot can use the &apos;Print Screen&apos; key?</source>
+        <translation>Windows verkar öppna sitt eget skärmklippsverktyg när du trycker på Print Screen. Vill du stänga av den funktionen så att Tildeshot kan använda tangenten?</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="273"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Starta om Flameshot för att ändringarna ska få effekt.</translation>
+        <source>Tildeshot must be restarted for changes to take effect.</source>
+        <translation>Starta om Tildeshot för att ändringarna ska få effekt.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="278"/>
@@ -2678,19 +2678,19 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="317"/>
-        <source>Register Flameshot as MS-SCREENCLIP application (administrator privileges required)</source>
-        <translation>Registrera Flameshot som program för MS-SCREENCLIP (kräver administratörsbehörighet)</translation>
+        <source>Register Tildeshot as MS-SCREENCLIP application (administrator privileges required)</source>
+        <translation>Registrera Tildeshot som program för MS-SCREENCLIP (kräver administratörsbehörighet)</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="321"/>
-        <source>After registering, you can select Flameshot as the default screenshot application in Windows Settings.</source>
-        <translation>Efter registreringen kan du välja Flameshot som standardprogram för skärmbilder i Windows-inställningarna.</translation>
+        <source>After registering, you can select Tildeshot as the default screenshot application in Windows Settings.</source>
+        <translation>Efter registreringen kan du välja Tildeshot som standardprogram för skärmbilder i Windows-inställningarna.</translation>
     </message>
     <message>
         <location filename="../../src/config/shortcutswidget.cpp" line="334"/>
         <location filename="../../src/config/shortcutswidget.cpp" line="344"/>
-        <source>You may start Flameshot as administrator ONCE and try again!</source>
-        <translation>Starta Flameshot som administratör en gång och försök igen.</translation>
+        <source>You may start Tildeshot as administrator ONCE and try again!</source>
+        <translation>Starta Tildeshot som administratör en gång och försök igen.</translation>
     </message>
     <message>
         <source>Delete current tool</source>
@@ -2880,8 +2880,8 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     </message>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="51"/>
-        <source>Flameshot Info</source>
-        <translation>Information från Flameshot</translation>
+        <source>Tildeshot Info</source>
+        <translation>Information från Tildeshot</translation>
     </message>
 </context>
 <context>
@@ -2955,7 +2955,7 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="143"/>
         <source>&amp;About</source>
-        <translation>&amp;Om Flameshot</translation>
+        <translation>&amp;Om Tildeshot</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="150"/>
@@ -3052,8 +3052,8 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="71"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Flameshot %1 finns nu att hämta</translation>
+        <source>New Tildeshot version %1 is available</source>
+        <translation>Tildeshot %1 finns nu att hämta</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="129"/>
@@ -3169,8 +3169,8 @@ Du kan behöva skriva ett omvänt snedstreck före #, som i ”\#FFF”</transla
     </message>
     <message>
         <location filename="../../src/config/visualseditor.cpp" line="142"/>
-        <source>Flameshot must be restarted to apply these changes!</source>
-        <translation>Starta om Flameshot för att ändringarna ska få effekt.</translation>
+        <source>Tildeshot must be restarted to apply these changes!</source>
+        <translation>Starta om Tildeshot för att ändringarna ska få effekt.</translation>
     </message>
 </context>
 <context>

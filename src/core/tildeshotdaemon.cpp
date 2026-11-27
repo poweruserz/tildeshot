@@ -1,5 +1,5 @@
-#include "flameshotdaemon.h"
-#include "core/flameshot.h"
+#include "tildeshotdaemon.h"
+#include "core/tildeshot.h"
 #include "tools/pin/pinwidget.h"
 #include "utils/abstractlogger.h"
 #include "utils/confighandler.h"
@@ -41,12 +41,12 @@
 
 namespace {
 /**
- * @brief Read a pin message written by FlameshotDaemon::createPin.
+ * @brief Read a pin message written by TildeshotDaemon::createPin.
  *
  * A QPixmap loses its device pixel ratio when it goes through a QDataStream,
  * so it travels next to the pixmap and is restored here. Without it the pin is
  * laid out in device pixels and comes out too big on a scaled screen. Messages
- * from an older flameshot don't carry it, in which case the pixmap keeps the
+ * from an older tildeshot don't carry it, in which case the pixmap keeps the
  * ratio it was created with.
  */
 void readPin(QDataStream& stream, QPixmap& pixmap, QRect& geometry)
@@ -60,20 +60,20 @@ void readPin(QDataStream& stream, QPixmap& pixmap, QRect& geometry)
 }
 
 /**
- * @brief A way of accessing the flameshot daemon both from the daemon itself,
+ * @brief A way of accessing the tildeshot daemon both from the daemon itself,
  * and from subcommands.
  *
  * The daemon is necessary in order to:
  * - Host the system tray,
  * - Listen for hotkey events that will trigger captures,
  * - Host pinned screenshot widgets,
- * - Host the clipboard on X11, where the clipboard gets lost once flameshot
+ * - Host the clipboard on X11, where the clipboard gets lost once tildeshot
  *   quits.
  *
  * If the `autoCloseIdleDaemon` option is true, the daemon will close as soon as
  * it is not needed to host pinned screenshots and the clipboard.
  *
- * Both the daemon and non-daemon flameshot processes use the same public API,
+ * Both the daemon and non-daemon tildeshot processes use the same public API,
  * which is implemented as static methods. In the daemon process, this class is
  * also instantiated as a singleton, so it can listen to D-Bus calls via the
  * sigslot mechanism. The instantiation is done by calling `start` (this must be
@@ -83,7 +83,7 @@ void readPin(QDataStream& stream, QPixmap& pixmap, QRect& geometry)
  * @note The daemon will be automatically launched where necessary, via D-Bus.
  * This applies only to Linux.
  */
-FlameshotDaemon::FlameshotDaemon()
+TildeshotDaemon::TildeshotDaemon()
   : m_persist(false)
   , m_hostingClipboard(false)
   , m_clipboardSignalBlocked(false)
@@ -121,17 +121,17 @@ FlameshotDaemon::FlameshotDaemon()
 #endif
 }
 
-void FlameshotDaemon::start()
+void TildeshotDaemon::start()
 {
     if (!m_instance) {
-        m_instance = new FlameshotDaemon();
-        // Tray icon needs FlameshotDaemon::instance() to be non-null
+        m_instance = new TildeshotDaemon();
+        // Tray icon needs TildeshotDaemon::instance() to be non-null
         m_instance->initTrayIcon();
         qApp->setQuitOnLastWindowClosed(false);
     }
 }
 
-void FlameshotDaemon::createPin(const QPixmap& capture, QRect geometry)
+void TildeshotDaemon::createPin(const QPixmap& capture, QRect geometry)
 {
     if (instance()) {
         instance()->attachPin(capture, geometry);
@@ -144,7 +144,7 @@ void FlameshotDaemon::createPin(const QPixmap& capture, QRect geometry)
     // A QPixmap loses its device pixel ratio when streamed, so send it along.
 #if defined(USE_KDSINGLEAPPLICATION) &&                                        \
   (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-    auto kdsa = KDSingleApplication(QStringLiteral("org.flameshot.Flameshot"));
+    auto kdsa = KDSingleApplication(QStringLiteral("org.tildeshot.Tildeshot"));
     stream << QStringLiteral("attachPin") << capture << geometry
            << capture.devicePixelRatio();
     kdsa.sendMessage(data);
@@ -156,7 +156,7 @@ void FlameshotDaemon::createPin(const QPixmap& capture, QRect geometry)
 #endif
 }
 
-void FlameshotDaemon::copyToClipboard(const QPixmap& capture)
+void TildeshotDaemon::copyToClipboard(const QPixmap& capture)
 {
     if (instance()) {
         instance()->attachScreenshotToClipboard(capture);
@@ -168,7 +168,7 @@ void FlameshotDaemon::copyToClipboard(const QPixmap& capture)
 
 #if defined(USE_KDSINGLEAPPLICATION) &&                                        \
   (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-    auto kdsa = KDSingleApplication(QStringLiteral("org.flameshot.Flameshot"));
+    auto kdsa = KDSingleApplication(QStringLiteral("org.tildeshot.Tildeshot"));
     stream << QStringLiteral("attachScreenshotToClipboard") << capture;
     kdsa.sendMessage(data);
 #else
@@ -181,7 +181,7 @@ void FlameshotDaemon::copyToClipboard(const QPixmap& capture)
 #endif
 }
 
-void FlameshotDaemon::copyToClipboard(const QString& text,
+void TildeshotDaemon::copyToClipboard(const QString& text,
                                       const QString& notification)
 {
     if (instance()) {
@@ -191,7 +191,7 @@ void FlameshotDaemon::copyToClipboard(const QString& text,
 
 #if defined(USE_KDSINGLEAPPLICATION) &&                                        \
   (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-    auto kdsa = KDSingleApplication(QStringLiteral("org.flameshot.Flameshot"));
+    auto kdsa = KDSingleApplication(QStringLiteral("org.tildeshot.Tildeshot"));
     QByteArray data;
     QDataStream stream(&data, QIODevice::WriteOnly);
     stream << QStringLiteral("attachTextToClipboard") << text << notification;
@@ -204,14 +204,14 @@ void FlameshotDaemon::copyToClipboard(const QString& text,
 }
 
 /**
- * @brief Is this instance of flameshot hosting any windows as a daemon?
+ * @brief Is this instance of tildeshot hosting any windows as a daemon?
  */
-bool FlameshotDaemon::isThisInstanceHostingWidgets()
+bool TildeshotDaemon::isThisInstanceHostingWidgets()
 {
     return instance() && !instance()->m_widgets.isEmpty();
 }
 
-void FlameshotDaemon::sendTrayNotification(const QString& text,
+void TildeshotDaemon::sendTrayNotification(const QString& text,
                                            const QString& title,
                                            const int timeout)
 {
@@ -222,7 +222,7 @@ void FlameshotDaemon::sendTrayNotification(const QString& text,
 }
 
 #if !defined(DISABLE_UPDATE_CHECKER)
-void FlameshotDaemon::showUpdateNotificationIfAvailable(CaptureWidget* widget)
+void TildeshotDaemon::showUpdateNotificationIfAvailable(CaptureWidget* widget)
 {
     if (!m_appLatestUrl.isEmpty() &&
         ConfigHandler().ignoreUpdateToVersion().compare(m_appLatestVersion) <
@@ -231,17 +231,17 @@ void FlameshotDaemon::showUpdateNotificationIfAvailable(CaptureWidget* widget)
     }
 }
 
-void FlameshotDaemon::getLatestAvailableVersion()
+void TildeshotDaemon::getLatestAvailableVersion()
 {
     // This features is required for MacOS and Windows user and for Linux users
-    // who installed Flameshot not from the repository.
-    QNetworkRequest requestCheckUpdates(QUrl(FLAMESHOT_APP_VERSION_URL));
+    // who installed Tildeshot not from the repository.
+    QNetworkRequest requestCheckUpdates(QUrl(TILDESHOT_APP_VERSION_URL));
     if (nullptr == m_networkCheckUpdates) {
         m_networkCheckUpdates = new QNetworkAccessManager(this);
         connect(m_networkCheckUpdates,
                 &QNetworkAccessManager::finished,
                 this,
-                &FlameshotDaemon::handleReplyCheckUpdates);
+                &TildeshotDaemon::handleReplyCheckUpdates);
     }
     m_networkCheckUpdates->get(requestCheckUpdates);
 
@@ -253,7 +253,7 @@ void FlameshotDaemon::getLatestAvailableVersion()
     });
 }
 
-void FlameshotDaemon::checkForUpdates()
+void TildeshotDaemon::checkForUpdates()
 {
     bool autoCheckEnabled = ConfigHandler().checkForUpdates();
 
@@ -269,11 +269,11 @@ void FlameshotDaemon::checkForUpdates()
         } else {
             QVersionNumber appLatestVersion =
               QVersionNumber::fromString(m_appLatestVersion);
-            if (Flameshot::instance()->getVersion() < appLatestVersion) {
+            if (Tildeshot::instance()->getVersion() < appLatestVersion) {
                 QDesktopServices::openUrl(QUrl(m_appLatestUrl));
             } else {
                 sendTrayNotification(tr("You have the latest version"),
-                                     "Flameshot");
+                                     "Tildeshot");
             }
         }
     }
@@ -283,18 +283,18 @@ void FlameshotDaemon::checkForUpdates()
 /**
  * @brief Return the daemon instance.
  *
- * If this instance of flameshot is the daemon, a singleton instance of
- * `FlameshotDaemon` is returned. As a side effect`start` will called if it
- * wasn't called earlier. If this instance of flameshot is not the daemon,
+ * If this instance of tildeshot is the daemon, a singleton instance of
+ * `TildeshotDaemon` is returned. As a side effect`start` will called if it
+ * wasn't called earlier. If this instance of tildeshot is not the daemon,
  * `nullptr` is returned.
  *
  * This strategy is used because the daemon needs to receive signals from D-Bus,
  * for which an instance of a `QObject` is required. The singleton serves as
  * that object.
  */
-FlameshotDaemon* FlameshotDaemon::instance()
+TildeshotDaemon* TildeshotDaemon::instance()
 {
-    // Because we don't use DBus on MacOS, each instance of flameshot is its own
+    // Because we don't use DBus on MacOS, each instance of tildeshot is its own
     // mini-daemon, responsible for hosting its own persistent widgets (e.g.
     // pins).
 #if defined(Q_OS_MACOS)
@@ -307,7 +307,7 @@ FlameshotDaemon* FlameshotDaemon::instance()
  * @brief Quit the daemon if it has nothing to do and the 'persist' flag is not
  * set.
  */
-void FlameshotDaemon::quitIfIdle()
+void TildeshotDaemon::quitIfIdle()
 {
     if (m_persist) {
         return;
@@ -319,7 +319,7 @@ void FlameshotDaemon::quitIfIdle()
 
 // SERVICE METHODS
 
-void FlameshotDaemon::attachPin(const QPixmap& pixmap, QRect geometry)
+void TildeshotDaemon::attachPin(const QPixmap& pixmap, QRect geometry)
 {
     auto* pinWidget = new PinWidget(pixmap, geometry);
     m_widgets.append(pinWidget);
@@ -332,7 +332,7 @@ void FlameshotDaemon::attachPin(const QPixmap& pixmap, QRect geometry)
     pinWidget->activateWindow();
 }
 
-void FlameshotDaemon::attachScreenshotToClipboard(const QPixmap& pixmap)
+void TildeshotDaemon::attachScreenshotToClipboard(const QPixmap& pixmap)
 {
     m_hostingClipboard = true;
     QClipboard* clipboard = QApplication::clipboard();
@@ -346,7 +346,7 @@ void FlameshotDaemon::attachScreenshotToClipboard(const QPixmap& pixmap)
 
 // D-BUS / KDSingleApplication METHODS
 
-void FlameshotDaemon::attachPin(const QByteArray& data)
+void TildeshotDaemon::attachPin(const QByteArray& data)
 {
     QDataStream stream(data);
     QPixmap pixmap;
@@ -357,7 +357,7 @@ void FlameshotDaemon::attachPin(const QByteArray& data)
     attachPin(pixmap, geometry);
 }
 
-void FlameshotDaemon::attachScreenshotToClipboard(const QByteArray& screenshot)
+void TildeshotDaemon::attachScreenshotToClipboard(const QByteArray& screenshot)
 {
     QDataStream stream(screenshot);
     QPixmap p;
@@ -366,7 +366,7 @@ void FlameshotDaemon::attachScreenshotToClipboard(const QByteArray& screenshot)
     attachScreenshotToClipboard(p);
 }
 
-void FlameshotDaemon::attachTextToClipboard(const QString& text,
+void TildeshotDaemon::attachTextToClipboard(const QString& text,
                                             const QString& notification)
 {
     // Must send notification before clipboard modification on linux
@@ -385,7 +385,7 @@ void FlameshotDaemon::attachTextToClipboard(const QString& text,
     clipboard->blockSignals(false);
 }
 
-void FlameshotDaemon::initTrayIcon()
+void TildeshotDaemon::initTrayIcon()
 {
     if (!ConfigHandler().disabledTrayIcon()) {
         enableTrayIcon(true);
@@ -396,7 +396,7 @@ void FlameshotDaemon::initTrayIcon()
 #endif
 }
 
-void FlameshotDaemon::enableTrayIcon(bool enable)
+void TildeshotDaemon::enableTrayIcon(bool enable)
 {
     if (enable) {
         if (m_trayIcon == nullptr) {
@@ -411,7 +411,7 @@ void FlameshotDaemon::enableTrayIcon(bool enable)
 }
 
 #if !defined(DISABLE_UPDATE_CHECKER)
-void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
+void TildeshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
 {
     if (!ConfigHandler().checkForUpdates() &&
         !m_showManualCheckAppUpdateStatus) {
@@ -425,7 +425,7 @@ void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
 
         QVersionNumber appLatestVersion =
           QVersionNumber::fromString(m_appLatestVersion);
-        if (Flameshot::instance()->getVersion() < appLatestVersion) {
+        if (Tildeshot::instance()->getVersion() < appLatestVersion) {
             emit newVersionAvailable(appLatestVersion);
             m_appLatestUrl = json["html_url"].toString();
             if (m_showManualCheckAppUpdateStatus) {
@@ -433,16 +433,16 @@ void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
             }
         } else if (m_showManualCheckAppUpdateStatus) {
             sendTrayNotification(tr("You have the latest version"),
-                                 "Flameshot");
+                                 "Tildeshot");
         }
     } else {
         qWarning() << "Failed to get information about the latest version. "
                    << reply->errorString();
         if (m_showManualCheckAppUpdateStatus) {
-            if (FlameshotDaemon::instance()) {
-                FlameshotDaemon::instance()->sendTrayNotification(
+            if (TildeshotDaemon::instance()) {
+                TildeshotDaemon::instance()->sendTrayNotification(
                   tr("Failed to get information about the latest version."),
-                  "Flameshot");
+                  "Tildeshot");
             }
         }
     }
@@ -451,17 +451,17 @@ void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
 #endif
 
 #if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-QDBusMessage FlameshotDaemon::createMethodCall(const QString& method)
+QDBusMessage TildeshotDaemon::createMethodCall(const QString& method)
 {
     QDBusMessage m =
-      QDBusMessage::createMethodCall(QStringLiteral("org.flameshot.Flameshot"),
+      QDBusMessage::createMethodCall(QStringLiteral("org.tildeshot.Tildeshot"),
                                      QStringLiteral("/"),
                                      QLatin1String(""),
                                      method);
     return m;
 }
 
-void FlameshotDaemon::checkDBusConnection(const QDBusConnection& connection)
+void TildeshotDaemon::checkDBusConnection(const QDBusConnection& connection)
 {
     if (!connection.isConnected()) {
         AbstractLogger::error() << tr("Unable to connect via DBus");
@@ -469,7 +469,7 @@ void FlameshotDaemon::checkDBusConnection(const QDBusConnection& connection)
     }
 }
 
-void FlameshotDaemon::call(const QDBusMessage& m)
+void TildeshotDaemon::call(const QDBusMessage& m)
 {
     QDBusConnection sessionBus = QDBusConnection::sessionBus();
     checkDBusConnection(sessionBus);
@@ -479,7 +479,7 @@ void FlameshotDaemon::call(const QDBusMessage& m)
 
 #if defined(USE_KDSINGLEAPPLICATION) &&                                        \
   (defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-void FlameshotDaemon::messageReceivedFromSecondaryInstance(
+void TildeshotDaemon::messageReceivedFromSecondaryInstance(
   const QByteArray& message)
 {
     // qDebug() << "Received message from second instance:" << message;
@@ -499,7 +499,7 @@ void FlameshotDaemon::messageReceivedFromSecondaryInstance(
         // qDebug() << "Pixmap:" << capture;
         // qDebug() << "Geometry:" << geometry;
         if (!capture.isNull()) {
-            FlameshotDaemon::instance()->attachPin(capture, geometry);
+            TildeshotDaemon::instance()->attachPin(capture, geometry);
         } else {
             qWarning() << "Received \"attachPin\" from second instance, but "
                           "pixmap is empty!";
@@ -509,7 +509,7 @@ void FlameshotDaemon::messageReceivedFromSecondaryInstance(
         stream >> capture;
         // qDebug() << "Pixmap:" << capture;
         if (!capture.isNull()) {
-            FlameshotDaemon::instance()->attachScreenshotToClipboard(capture);
+            TildeshotDaemon::instance()->attachScreenshotToClipboard(capture);
         } else {
             qWarning() << "Received \"attachScreenshotToClipboard\" from "
                           "second instance, but pixmap is empty!";
@@ -521,7 +521,7 @@ void FlameshotDaemon::messageReceivedFromSecondaryInstance(
         // qDebug() << "Text:" << text;
         // qDebug() << "Notification:" << notification;
         if (!text.isEmpty()) {
-            FlameshotDaemon::instance()->attachTextToClipboard(text,
+            TildeshotDaemon::instance()->attachTextToClipboard(text,
                                                                notification);
         } else {
             qWarning() << "Received \"attachTextToClipboard\" from second "
@@ -535,4 +535,4 @@ void FlameshotDaemon::messageReceivedFromSecondaryInstance(
 #endif
 
 // STATIC ATTRIBUTES
-FlameshotDaemon* FlameshotDaemon::m_instance = nullptr;
+TildeshotDaemon* TildeshotDaemon::m_instance = nullptr;
